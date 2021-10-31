@@ -42,6 +42,7 @@ const AppFooter = () => {
               <a
                 href="https://nextjs.org/"
                 target="_blank"
+                rel="noreferrer"
                 className=" text-orange-ddev "
               >
                 NextJS,
@@ -49,6 +50,7 @@ const AppFooter = () => {
               <a
                 href="https://tailwindcss.com/"
                 target="_blank"
+                rel="noreferrer"
                 className=" text-orange-ddev "
               >
                 Tailwind,
@@ -56,6 +58,7 @@ const AppFooter = () => {
               <a
                 href="https://es.reactjs.org/"
                 target="_blank"
+                rel="noreferrer"
                 className=" text-orange-ddev "
               >
                 React
@@ -65,8 +68,8 @@ const AppFooter = () => {
         </div>
         <div className="">
           <div className="flex justify-center max-w-sm space-x-4 mx-auto pt-4 md:pt-0 ">
-            {social.map((e) => (
-              <Link href={e.url}>
+            {social.map((e, index) => (
+              <Link key={index} href={e.url}>
                 <a target="_blank" className=" w-5 ">
                   {e.icon}
                 </a>
