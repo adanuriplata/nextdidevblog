@@ -1,11 +1,11 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/modules/Home.module.scss";
+import MainLayout from "../components/MainLayout/index";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className={styles.container}>
-      <h1>starter</h1>
-    </div>
+    <>
+      <MainLayout>Contenido</MainLayout>
+    </>
   );
-}
+};
+
+export default Home;
