@@ -1,9 +1,14 @@
 import MainLayout from "../components/MainLayout/index";
+import Hero from "../components/Home/Hero";
+import AboutMe from "../components/Home/AboutMe";
 
 const Home = () => {
   return (
     <>
-      <MainLayout>Contenido</MainLayout>
+      <MainLayout>
+        <Hero />
+        <AboutMe />
+      </MainLayout>
     </>
   );
 };

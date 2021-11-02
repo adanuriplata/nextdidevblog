@@ -6,7 +6,7 @@ function MainLogoIcon(props) {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       width={156}
-      height={66}
+      height={56}
       viewBox="0 0 525 225"
       {...props}
     >

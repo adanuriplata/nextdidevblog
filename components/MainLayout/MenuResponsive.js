@@ -5,7 +5,7 @@ const MenuResponsive = () => {
   const menuItems = [
     {
       id: "1",
-      name: "inicio",
+      name: "Inicio",
       url: "/",
     },
     {
