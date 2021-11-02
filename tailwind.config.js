@@ -17,6 +17,11 @@ module.exports = {
         "white-l-ddev": "#ccd6f6",
         "orange-ddev": "#D48A2A",
       },
+      fontFamily: {
+        mono: ['"Fira Mono"'],
+        sans: ["Montserrat"],
+        serif: ['"Red Hat Display"', "Merriweather"],
+      },
     },
   },
   variants: {
