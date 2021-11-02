@@ -5,7 +5,7 @@ import AppMeta from "./AppMeta";
 
 const MainLayout = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="flex flex-col min-h-screen overflow-hidden bg-bg-ddev">
       <AppMeta></AppMeta>
       <AppHeader />
       {children}
