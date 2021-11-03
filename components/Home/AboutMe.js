@@ -1,10 +1,12 @@
 import React from "react";
 import Button from "../globals/buttons/Button";
+import style from "../../styles/components/ImageShadow.module.scss";
+import Image from "next/image";
 
 const AboutMe = () => {
   return (
     <section
-      className=" mb-14 md:py-40 py-8 md:max-w-4xl lg:max-w-full
+      className=" mb-14 md:py-40 py-16 md:max-w-4xl lg:max-w-full
      2xl:pl-72 2xl:pr-72 lg:pl-48 lg:pr-48 md:pl-32 px-8"
     >
       <div className="">
@@ -19,12 +21,16 @@ const AboutMe = () => {
         </h2>
         <div className="md:flex my-12 justify-around">
           <div className="md:w-1/2 w-full divide-y divide-white-l-ddev p-4">
-            <div className="mb-10">
-              <img
-                className="mx-auto rounded-lg shadow-solid text-teal-400 ddev-hover-button w-40 h-40"
+            <div
+              className={`${style.ddevHoverImage} mb-10 mx-auto w-40 h-40 rounded-lg shadow-solid text-teal-400`}
+            >
+              <Image
+                className="rounded-lg"
                 loading="lazy"
                 src="/img/avatar-adan-uri.jpeg"
                 alt="Acerca de mi Adan Uri Plata"
+                width={160}
+                height={160}
               />
             </div>
             <div>
