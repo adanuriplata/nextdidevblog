@@ -2,7 +2,7 @@ import MainLayout from "../components/MainLayout/index";
 import Hero from "../components/Home/Hero";
 import AboutMe from "../components/Home/AboutMe";
 import Experience from "../components/Home/Experience";
-import Projects from "../components/Home/Projects";
+import Portfolio from "../components/Home/Portfolio";
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
         <Hero />
         <AboutMe />
         <Experience />
-        <Projects />
+        <Portfolio />
       </MainLayout>
     </>
   );

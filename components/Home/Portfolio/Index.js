@@ -1,8 +1,7 @@
 import projectsFixed from "./fakeData";
-import ItemProject from "./ItemProject";
+import ItemPortfolio from "./ItemPortfolio";
 
-const Projects = () => {
-  console.log(projectsFixed);
+const Portfolio = () => {
   return (
     <section
       className="md:mb-64 mb-36 md:py-24 py-8 md:max-w-4xl lg:max-w-full
@@ -26,7 +25,7 @@ const Projects = () => {
         </header>
         <div className="grid md:grid-rows-2 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-6">
           {projectsFixed.map((e, i) => (
-            <ItemProject key={i} {...e} />
+            <ItemPortfolio key={i} {...e} />
           ))}
         </div>
       </div>
@@ -34,4 +33,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Portfolio;
