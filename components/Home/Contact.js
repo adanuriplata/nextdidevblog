@@ -29,16 +29,16 @@ const Contact = () => {
 
   return (
     <section
-      class="mb-36 md:py-12 py-8 md:max-w-4xl lg:max-w-full
+      className="mb-36 md:py-12 py-8 md:max-w-4xl lg:max-w-full
     2xl:pl-72 2xl:pr-72 lg:pl-48 lg:pr-48 md:pl-32 px-8"
       id="contacto"
     >
-      <div class="mx-auto text-center" id="hubspotWrap">
-        <header class="text-center mb-12">
-          <h2 class="text-green-ddev text-3xl font-mono">
+      <div className="mx-auto text-center" id="hubspotWrap">
+        <header className="text-center mb-12">
+          <h2 className="text-green-ddev text-3xl font-mono">
             &gt;
             <span
-              class="text-white-l-ddev text-2xl pl-2 py-2"
+              className="text-white-l-ddev text-2xl pl-2 py-2"
               style={{ fontFamily: "'DotGothic16'" }}
             >
               Contacto
@@ -57,9 +57,9 @@ const Contact = () => {
           </p>
           <p>También estoy en redes sociales como @distordev</p>
         </header>
-        <div class="mx-auto">
+        <div className="mx-auto">
           <div
-            class="mx-auto max-w-screen-sm md:p-12 p-5 bg-gray-900 hover:shadow-2xl rounded-lg"
+            className="mx-auto max-w-screen-sm md:p-12 p-5 bg-gray-900 hover:shadow-2xl rounded-lg"
             id="divFormHolder"
           ></div>
         </div>
