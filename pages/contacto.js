@@ -1,12 +1,12 @@
 import MainLayout from "components/MainLayout";
 import MainHero from "components/globals/heros/MainHero";
-import Contact from "components/Contact";
+import ContactPage from "components/ContactPage";
 
 const Contacto = () => {
   return (
     <MainLayout>
       <MainHero title="Contacto" />
-      <Contact />
+      <ContactPage />
     </MainLayout>
   );
 };

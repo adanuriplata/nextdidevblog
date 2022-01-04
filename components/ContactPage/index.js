@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const Contact = () => {
+const ContactPage = () => {
   useEffect(() => {
     const hubspotObserver = new IntersectionObserver(
       (entries) => {
@@ -54,4 +54,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;
