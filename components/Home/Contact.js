@@ -44,17 +44,7 @@ const Contact = () => {
               Contacto
             </span>
           </h2>
-          <p>
-            Platiquemos, por correo{" "}
-            <a
-              href="mailto:adanuriplata@gmail.com"
-              className="text-orange-ddev"
-            >
-              {" "}
-              adanuriplata@gmail.com
-            </a>{" "}
-            o formulario.
-          </p>
+          <p>Platiquemos</p>
           <p>También estoy en redes sociales como @distordev</p>
         </header>
         <div className="mx-auto">
