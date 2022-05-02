@@ -1,31 +1,31 @@
 import { useEffect } from "react";
 
 const Contact = () => {
-  useEffect(() => {
-    const hubspotObserver = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          const s = document.createElement("script");
-          s.src = "//js.hsforms.net/forms/shell.js";
-          s.charset = "utf-8";
-          s.type = "text/javascript";
-          if (document.head.appendChild(s)) {
-            setTimeout(function () {
-              hbspt.forms.create({
-                region: "na1",
-                portalId: "5518085",
-                formId: "e66095e2-568a-4ddc-9fa3-8c9563e8571c",
-                target: "#divFormHolder",
-              });
-            }, 350);
-          }
-          hubspotObserver.disconnect();
-        }
-      },
-      { treshold: [0] }
-    );
-    hubspotObserver.observe(document.querySelector("#hubspotWrap"));
-  }, []);
+  // useEffect(() => {
+  //   const hubspotObserver = new IntersectionObserver(
+  //     (entries) => {
+  //       if (entries[0].isIntersecting) {
+  //         const s = document.createElement("script");
+  //         s.src = "//js.hsforms.net/forms/shell.js";
+  //         s.charset = "utf-8";
+  //         s.type = "text/javascript";
+  //         if (document.head.appendChild(s)) {
+  //           setTimeout(function () {
+  //             hbspt.forms.create({
+  //               region: "na1",
+  //               portalId: "5518085",
+  //               formId: "e66095e2-568a-4ddc-9fa3-8c9563e8571c",
+  //               target: "#divFormHolder",
+  //             });
+  //           }, 350);
+  //         }
+  //         hubspotObserver.disconnect();
+  //       }
+  //     },
+  //     { treshold: [0] }
+  //   );
+  //   hubspotObserver.observe(document.querySelector("#hubspotWrap"));
+  // }, []);
 
   return (
     <section

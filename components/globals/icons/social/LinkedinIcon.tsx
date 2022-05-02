@@ -1,6 +1,10 @@
 import * as React from "react";
 
-function LinkedinIcon(props) {
+interface LinkedinIconProps {
+  props?: any
+}
+
+function LinkedinIcon(props: LinkedinIconProps) {
   return (
     <svg
       aria-hidden="true"

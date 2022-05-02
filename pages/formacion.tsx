@@ -1,5 +1,6 @@
-import MainLayout from "components/MainLayout";
-import MainHero from "components/globals/heros/MainHero";
+import MainHero from "../components/globals/heros/MainHero";
+import MainLayout from "../components/MainLayout";
+
 
 const Blog = () => {
   return (

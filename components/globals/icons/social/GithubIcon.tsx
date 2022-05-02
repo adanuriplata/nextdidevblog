@@ -1,6 +1,10 @@
 import * as React from "react";
 
-function GithubIcon(props) {
+interface GithubIconProps {
+  props?: any
+}
+
+function GithubIcon(props: GithubIconProps) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} {...props}>
       <path

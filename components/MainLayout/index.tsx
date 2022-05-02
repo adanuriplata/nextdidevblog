@@ -1,9 +1,13 @@
-import React from "react";
+import React, { FC, ReactNode } from "react";
 import AppHeader from "./AppHeader";
 import AppFooter from "./AppFooter";
 import AppMeta from "./AppMeta";
 
-const MainLayout = ({ children }) => {
+interface MainLayoutProps {
+  children?: ReactNode
+}
+
+const MainLayout: FC<MainLayoutProps> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden bg-bg-ddev">
       <AppMeta></AppMeta>
