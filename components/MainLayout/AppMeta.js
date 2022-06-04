@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import {NextSeo} from 'next-seo'
 
 const AppMeta = () => {
   return (
@@ -12,10 +13,10 @@ const AppMeta = () => {
           key="viewport"
         />
       </Head>
-      <div>
-        {/* Data de SEO */}
-        {/* instalar  https://www.npmjs.com/package/next-seo */}
-      </div>
+      <NextSeo 
+          title="DistorDev"
+          description="Mi sitio web personal"
+        />
     </>
   );
 };

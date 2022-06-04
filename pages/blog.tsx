@@ -1,11 +1,9 @@
-import MainHero from "../components/globals/heros/MainHero";
 import MainLayout from "../components/MainLayout";
 
 
 const Blog = () => {
   return (
-    <MainLayout>
-      <MainHero title="Blog" />
+    <MainLayout heroTitle="Blog">
       <div>Pagina de blog</div>
     </MainLayout>
   );

@@ -28,7 +28,8 @@ const ContactPage = () => {
   // }, []);
 
   return (
-    <article className="max-w-screen-xl mx-auto px-4 md:px-16 lg:px-32">
+    // <article className="px-4 md:px-16 lg:px-32">
+    <article>
       <section className=" mb-10 ">
         <div>
           <div className="md:flex md:justify-evenly">

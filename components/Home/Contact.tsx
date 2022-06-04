@@ -29,8 +29,7 @@ const Contact = () => {
 
   return (
     <section
-      className="mb-36 md:py-12 py-8 md:max-w-4xl lg:max-w-full
-    2xl:pl-72 2xl:pr-72 lg:pl-48 lg:pr-48 md:pl-32 px-8"
+      className="mb-36 md:py-12 py-8"
       id="contacto"
     >
       <div className="mx-auto text-center" id="hubspotWrap">
