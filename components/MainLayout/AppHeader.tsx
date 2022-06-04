@@ -41,7 +41,7 @@ const AppHeader = () => {
           leaveTo="opacity-0 -translate-x-20 "
         >
           <div className=" w-full px-8">
-            <MenuResponsive />
+            <Menu menuMobile/>
           </div>
         </Transition>
       </nav>

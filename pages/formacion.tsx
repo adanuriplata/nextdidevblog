@@ -1,9 +1,11 @@
+import { ReactElement } from "react";
+import MainHero from "../components/globals/heros/MainHero";
 import MainLayout from "../components/MainLayout";
 
 
 const Formacion = () => {
   return (
-    <MainLayout heroTitle="Formación Académica">
+    <>
       <section className="md:my-18 my-0">
         <div>
           <p className="md:text-sm text-xs font-mono my-1 text-green-ddev"> <span className="text-3xl">👨‍💻</span> La tecnología,</p>
@@ -39,9 +41,17 @@ const Formacion = () => {
           </div>
           </div>
 </section>
+            </>
 
-    </MainLayout>
   );
 };
 
 export default Formacion;
+
+Formacion.getLayout = function getLayout(Formacion: ReactElement) {
+  return (
+    <MainLayout heroTitle="Formación Académica" >
+      {Formacion}
+    </MainLayout>
+      )
+}
