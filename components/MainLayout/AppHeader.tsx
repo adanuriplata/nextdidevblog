@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import MainLogoIcon from "/components/globals/icons/MainLogoIcon";
 import Link from "next/link";
 import Menu from "./Menu";
-import MenuResponsive from "./MenuResponsive";
 import ButtonMenu from "./ButtonMenu";
 import { Transition } from "@headlessui/react";
+import MainLogoIcon from '../globals/icons/MainLogoIcon';
 
 const AppHeader = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const handleOpen = (valueopen) => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const handleOpen = (valueopen: boolean) => {
     setIsOpen(valueopen);
   };
 
@@ -18,7 +17,7 @@ const AppHeader = () => {
           <div>
             <Link href="/">
               <a>
-                <MainLogoIcon className="mx-auto" />
+                <MainLogoIcon />
               </a>
             </Link>
           </div>
