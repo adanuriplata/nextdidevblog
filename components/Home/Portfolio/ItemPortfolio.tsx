@@ -1,7 +1,15 @@
 import ArrowLinkIcon from "../../globals/icons/ArrowLinkIcon";
 import Image from "next/image";
 
-const ItemPortfolio = ({ name, description, technologies, image, siteurl }) => {
+interface ItemPortfolioProps {
+  name: string,
+  description: string,
+  technologies: string,
+  image: string,
+  siteurl: string,
+}
+
+const ItemPortfolio : React.FC<ItemPortfolioProps> = ({ name, description, technologies, image, siteurl } : ItemPortfolioProps) => {
   return (
     <div className="transition duration-500 ease-in-out hover:bg-gray-800 bg-gray-900 border-gray-900 shadow-lg p-8 md:mx-0 mx-5 rounded-lg hover:shadow-solid border-2 hover:border-green-ddev hover:text-green-ddev ">
       <div className="mx-auto rounded-md">
@@ -28,7 +36,7 @@ const ItemPortfolio = ({ name, description, technologies, image, siteurl }) => {
       <div className="flex justify-end mt-4">
         <div className="px-4">
           <a href={siteurl} target="_BLANK" rel="noreferrer">
-            <ArrowLinkIcon className=" w-8 fill-current text-white-ddev" />
+            {/* <ArrowLinkIcon className=" w-8 fill-current text-white-ddev" /> */}
           </a>
         </div>
       </div>

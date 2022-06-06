@@ -1,6 +1,11 @@
 import * as React from "react";
 
-function FacebookIcon(props) {
+interface FacebookIconProps {
+  props?: any
+}
+
+
+function FacebookIcon(props: FacebookIconProps) {
   return (
     <svg
       aria-hidden="true"

@@ -1,9 +1,13 @@
 import React from "react";
 
-const MainHero = ({ title }) => {
+interface MainHeroProps {
+  title: string,
+}
+
+const MainHero = ({ title }: MainHeroProps ) => {
   return (
-    <header className=" mb-8 py-5 bg-gray-900">
-      <div className="max-w-screen-xl mx-auto px-4 md:px-16 lg:px-32">
+    <header className="mb-8 py-5 bg-gray-900">
+      <div className="max-w-screen-2xl mx-auto px-8 md:px-16 lg:px-32">
         <h1
           className="text-white-l-ddev md:text-4xl text-3xl"
           style={{ fontFamily: "'DotGothic16'" }}

@@ -5,10 +5,8 @@ import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <section
-      className=" mb-14 md:py-40 py-16 md:max-w-4xl lg:max-w-full
-     2xl:pl-72 2xl:pr-72 lg:pl-48 lg:pr-48 md:pl-32 px-8"
-    >
+    // <section className=" mb-14 md:py-40 py-16 md:max-w-4xl lg:max-w-full 2xl:pl-72 2xl:pr-72 lg:pl-48 lg:pr-48 md:pl-32 px-8">
+    <section className=" mb-14 md:py-40 py-16">
       <div className="">
         <h2 className="text-green-ddev text-3xl font-mono">
           &gt;
@@ -58,7 +56,7 @@ const AboutMe = () => {
           <div className="md:w-1/2 w-full py-4 px-2">
             <p className="mb-4">
               👋 Soy Adan Uri Plata <br />{" "}
-              <span className="text-green-ddev">Desarrollador web</span> formado
+              <span className="text-green-ddev">FrontEnd Developer</span> formado
               en la Benemérita Universidad Autónoma de Puebla estudiando{" "}
               <span className="text-green-ddev">
                 Ciencias de la Computación.

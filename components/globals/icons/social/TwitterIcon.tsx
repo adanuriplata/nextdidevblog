@@ -1,6 +1,10 @@
 import * as React from "react";
 
-function TwitterIcon(props) {
+interface TwitterIconProps {
+  props?: any
+}
+
+function TwitterIcon(props: TwitterIconProps) {
   return (
     <svg
       aria-hidden="true"

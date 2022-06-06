@@ -1,9 +1,9 @@
-import LinkedinIcon from "/components/globals/icons/social/LinkedinIcon";
-import GithubIcon from "/components/globals/icons/social/GithubIcon";
-import InstagramIcon from "/components/globals/icons/social/InstagramIcon";
-import TwitterIcon from "/components/globals/icons/social/TwitterIcon";
 import Link from "next/link";
 import Button from "../globals/buttons/Button";
+import GithubIcon from "../globals/icons/social/GithubIcon";
+import InstagramIcon from "../globals/icons/social/InstagramIcon";
+import LinkedinIcon from "../globals/icons/social/LinkedinIcon";
+import TwitterIcon from "../globals/icons/social/TwitterIcon";
 
 const Hero = () => {
   const social = [
@@ -25,7 +25,8 @@ const Hero = () => {
     },
   ];
   return (
-    <section className="md:py-40 py-8 md:max-w-3xl lg:max-w-7xl 2xl:pl-72 lg:pl-48 md:pl-32 px-8  ">
+    // <section className="md:py-40 py-8 md:max-w-3xl lg:max-w-7xl 2xl:pl-72 lg:pl-48 md:pl-32 px-8  ">
+    <section className="md:py-40 py-8"> 
       <div>
         <p className="text-green-ddev font-mono">Hola, soy</p>
         <h1

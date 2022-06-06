@@ -4,19 +4,26 @@ import AboutMe from "../components/Home/AboutMe";
 import Experience from "../components/Home/Experience";
 import Portfolio from "../components/Home/Portfolio";
 import Contact from "../components/Home/Contact";
+import { ReactElement } from "react";
 
 const Home = () => {
   return (
     <>
-      <MainLayout>
         <Hero />
         <AboutMe />
         <Experience />
         <Portfolio />
         <Contact />
-      </MainLayout>
     </>
   );
 };
 
 export default Home;
+
+Home.getLayout = function getLayout( Home: ReactElement ) {
+  return (
+    <MainLayout>
+      {Home}
+    </MainLayout>
+  )
+}

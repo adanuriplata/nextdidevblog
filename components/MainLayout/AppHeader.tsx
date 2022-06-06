@@ -1,25 +1,23 @@
 import React, { useState } from "react";
-import MainLogoIcon from "/components/globals/icons/MainLogoIcon";
 import Link from "next/link";
 import Menu from "./Menu";
-import MenuResponsive from "./MenuResponsive";
 import ButtonMenu from "./ButtonMenu";
 import { Transition } from "@headlessui/react";
+import MainLogoIcon from '../globals/icons/MainLogoIcon';
 
 const AppHeader = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const handleOpen = (valueopen) => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const handleOpen = (valueopen: boolean) => {
     setIsOpen(valueopen);
   };
 
   return (
-    <div>
       <nav>
         <div className="relative flex items-center justify-between h-20 md:max-w-3xl lg:max-w-7xl 2xl:max-w-full mx-auto px-8 2xl:px-32">
           <div>
             <Link href="/">
               <a>
-                <MainLogoIcon className="mx-auto" />
+                <MainLogoIcon />
               </a>
             </Link>
           </div>
@@ -42,11 +40,10 @@ const AppHeader = () => {
           leaveTo="opacity-0 -translate-x-20 "
         >
           <div className=" w-full px-8">
-            <MenuResponsive />
+            <Menu menuMobile/>
           </div>
         </Transition>
       </nav>
-    </div>
   );
 };
 
