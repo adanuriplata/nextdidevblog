@@ -1,4 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react'
+import DarkModeIcon from './icons/DarkModeIcon'
+import SystemModeIcon from './icons/SystemModeIcon'
+
+
 
 const DarkModeSwitch = () => {
 
@@ -9,8 +13,13 @@ const DarkModeSwitch = () => {
     typeof window !== 'undefined' && !localStorage.getItem('theme')
   )
 
-  // const initialModeByLocalStorage = () => typeof window !== 'undefined' && localStorage.getItem('theme') === 'dark'
-  // const initialSourceByLocalStorage = () => typeof window !== 'undefined' && !localStorage.getItem('theme')
+  // setIsDarkMode(typeof window !== 'undefined' && localStorage.getItem('theme') === 'dark')
+  // setSystemSource(typeof window !== 'undefined' && !localStorage.getItem('theme'))
+
+  // const [isDarkMode, setIsDarkMode] = useState<Boolean>()
+  // const [isSystemSource, setSystemSource] = useState<Boolean>()
+
+
 
 
 
@@ -55,17 +64,23 @@ const DarkModeSwitch = () => {
 
   updateThemeMode();
   isSystemPreferenceChange();
+  console.log(isSystemSource)
+
+  if (isSystemSource === undefined && isDarkMode === undefined) return <p>loading...</p>
 
   return (
-    <div id='este'>
-      <button className={`${(isDarkMode && !isSystemSource) ? 'text-5xl' : 'text-xs'} dark:text-green-ddev dark:bg-lime-100 bg-lime-600 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded-l`} onClick={() => {
-        setIsDarkMode(true) 
-        setSystemSource(false)} }>Dark</button>
-      <button className={`${(!isDarkMode && !isSystemSource)  ? 'text-5xl' : 'text-xs'} dark:text-green-ddev dark:bg-lime-600 bg-lime-100 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded-l`} onClick={() => {
-        setIsDarkMode(false) 
-        setSystemSource(false)}  }>Light</button>
-      <button className={`${isSystemSource ? 'text-5xl' : 'text-xs'} dark:text-green-ddev dark:bg-lime-100 bg-lime-100 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded-l`} onClick={() => setSystemSource(true)}>System</button>
-    </div>
+    <>
+      <div className={` ${!isSystemSource ? 'bg-gray-700' : 'hover:bg-gray-700'} cursor-pointer text-gray-300 font-sans items-center font-medium px-3 py-2 hover:bg focus:outline-none rounded-md transition duration-500 ease-in-out `} onClick={() => {
+        setIsDarkMode(!isDarkMode) 
+        setSystemSource(false)} }>
+            <DarkModeIcon />
+      </div>
+      <div className={` ${isSystemSource ? 'bg-gray-700' : 'hover:bg-gray-700'} cursor-pointer text-gray-300 font-sans items-center font-medium px-3 py-2 hover:bg focus:outline-none rounded-md transition duration-500 ease-in-out `} onClick={() => {
+        // setIsDarkMode(!isDarkMode) 
+        setSystemSource(true)} }>
+            <SystemModeIcon />
+      </div>
+    </>
   )
 }
 

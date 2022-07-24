@@ -36,7 +36,6 @@ const menuItems = [
 
 const Menu = ({menuMobile= false}: MenuProps) => {
   const { asPath } = useRouter();
-  console.log(asPath)
 
   if(menuMobile) {
     return <div className=" md:hidden flex flex-wrap space-y-4 ">
@@ -53,7 +52,7 @@ const Menu = ({menuMobile= false}: MenuProps) => {
   </div>
   }
   return (
-    <div className=" flex space-x-4 flex-wrap  ">
+    <div className=" flex space-x-4 flex-wrap items-center ">
     {menuItems.map((e) => (
       <Link key={e.id} href={e.url}>
         <a className={` ${asPath === e.url ? 'bg-gray-700' : 'hover:bg-gray-700'} text-gray-300 font-sans items-center font-medium px-3 py-2 hover:bg focus:outline-none rounded-md transition duration-500 ease-in-out `}>
