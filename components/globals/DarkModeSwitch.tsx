@@ -66,20 +66,19 @@ const DarkModeSwitch = () => {
   isSystemPreferenceChange();
   console.log(isSystemSource)
 
-  if (isSystemSource === undefined && isDarkMode === undefined) return <p>loading...</p>
-
   return (
     <>
-      <div className={` ${!isSystemSource ? 'bg-gray-700' : 'hover:bg-gray-700'} cursor-pointer text-gray-300 font-sans items-center font-medium px-3 py-2 hover:bg focus:outline-none rounded-md transition duration-500 ease-in-out `} onClick={() => {
+      <div className={`${false ? 'bg-gray-700' : 'hover:bg-gray-700'} cursor-pointer text-gray-300 font-sans items-center font-medium px-3 py-2 hover:bg focus:outline-none rounded-md transition duration-500 ease-in-out `} onClick={() => {
         setIsDarkMode(!isDarkMode) 
         setSystemSource(false)} }>
             <DarkModeIcon />
       </div>
-      <div className={` ${isSystemSource ? 'bg-gray-700' : 'hover:bg-gray-700'} cursor-pointer text-gray-300 font-sans items-center font-medium px-3 py-2 hover:bg focus:outline-none rounded-md transition duration-500 ease-in-out `} onClick={() => {
+      {/* TODO: solve details of not matching server and client styles */}
+      {/* <div className={`${isSystemSource ? 'bg-gray-700' : 'hover:bg-gray-700'} cursor-pointer text-gray-300 font-sans items-center font-medium px-3 py-2 hover:bg focus:outline-none rounded-md transition duration-500 ease-in-out `} onClick={() => {
         // setIsDarkMode(!isDarkMode) 
         setSystemSource(true)} }>
             <SystemModeIcon />
-      </div>
+      </div> */}
     </>
   )
 }
