@@ -56,7 +56,7 @@ const AboutMe = () => {
           <div className="md:w-1/2 w-full py-4 px-2">
             <p className="mb-4">
               👋 Soy Adan Uri Plata <br />{" "}
-              <span className="text-green-ddev">FrontEnd Developer</span> formado
+              <span className="text-green-ddev">FrontEnd Developer React</span> formado
               en la Benemérita Universidad Autónoma de Puebla estudiando{" "}
               <span className="text-green-ddev">
                 Ciencias de la Computación.
