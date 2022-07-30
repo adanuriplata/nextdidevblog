@@ -1,13 +1,13 @@
 import * as React from "react"
 
-const SystemModeIcon = (props) => (
+const SystemModeIcon = () => (
   <svg
     width={15}
     height={15}
     fill="none"
     viewBox="0 0 58 58"
     xmlns="http://www.w3.org/2000/svg"
-    {...props}
+    // {...props}
   >
     <path
       d="M42.304 32.545c0 3.657-2.817 6.579-6.24 6.579-3.424 0-6.241-2.922-6.241-6.58 0-3.656 2.817-6.578 6.24-6.578 3.424 0 6.241 2.922 6.241 6.579Z"

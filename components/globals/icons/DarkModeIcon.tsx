@@ -1,13 +1,13 @@
 import * as React from "react"
 
-const DarkModeIcon = (props) => (
+const DarkModeIcon = () => (
   <svg
     width={15}
     height={15}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 58 58"
-    {...props}
+    // {...props}
   >
     <g clipPath="url(#a)">
       <path
