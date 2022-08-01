@@ -40,7 +40,7 @@ const ContactPage = () => {
               <br />
               <p>Platiquemos. 👉 </p>
               <br />
-              <p>También estoy en redes sociales como @distordev</p>
+              <p>También estoy en redes sociales como @adanuriplata</p>
             </div>
             <div className="mx-auto">
               <div

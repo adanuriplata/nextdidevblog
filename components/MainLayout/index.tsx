@@ -11,7 +11,7 @@ interface MainLayoutProps {
 
 const MainLayout: FC<MainLayoutProps> = ({ children, heroTitle }) => {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden bg-white dark:bg-bg-ddev">
+    <div className="flex flex-col min-h-screen overflow-hidden bg-white-l-ddev	 dark:bg-bg-ddev">
       <AppMeta></AppMeta>
       <AppHeader />
       { heroTitle && <MainHero title={heroTitle} /> }

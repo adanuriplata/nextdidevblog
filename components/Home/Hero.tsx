@@ -12,7 +12,7 @@ const Hero = () => {
       icon: <GithubIcon />,
     },
     {
-      url: "https://www.instagram.com/distordev/",
+      url: "https://www.instagram.com/AdanUriPlata/",
       icon: <InstagramIcon />,
     },
     {
@@ -20,7 +20,7 @@ const Hero = () => {
       icon: <LinkedinIcon />,
     },
     {
-      url: "https://twitter.com/DistorDev",
+      url: "https://twitter.com/AdanUriPlata",
       icon: <TwitterIcon />,
     },
   ];
@@ -45,7 +45,7 @@ const Hero = () => {
                 </a>
               </Link>
             ))}
-            <span>@distordev</span>
+            <span>@AdanUriPlata</span>
           </div>
         </div>
         <p>
