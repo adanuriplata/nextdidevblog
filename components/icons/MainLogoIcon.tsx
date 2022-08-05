@@ -4,7 +4,7 @@ interface MainLogoIconProps {
   props?: any
 }
 
-function MainLogoIcon(props: MainLogoIconProps) {
+export function MainLogoIcon(props: MainLogoIconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

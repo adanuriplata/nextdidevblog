@@ -1,4 +1,4 @@
-import ArrowLinkIcon from "../../globals/icons/ArrowLinkIcon";
+import { ArrowLinkIcon } from "../../icons";
 import Image from "next/image";
 
 interface ItemPortfolioProps {

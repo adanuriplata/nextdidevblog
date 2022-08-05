@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../globals/buttons/Button";
+import {Button} from "../ui";
 
 const Experience = () => {
   return (

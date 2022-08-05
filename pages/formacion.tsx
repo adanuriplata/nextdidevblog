@@ -1,5 +1,4 @@
 import { ReactElement } from "react";
-import MainHero from "../components/globals/heros/MainHero";
 import MainLayout from "../components/MainLayout";
 
 

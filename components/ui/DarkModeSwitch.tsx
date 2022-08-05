@@ -1,10 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import DarkModeIcon from './icons/DarkModeIcon'
-import SystemModeIcon from './icons/SystemModeIcon'
+import {DarkModeIcon } from '../icons/DarkModeIcon'
+// import {DarkModeIcon, SystemModeIcon } from '../icons/DarkModeIcon'
 
 
 
-const DarkModeSwitch = () => {
+export const DarkModeSwitch = () => {
 
   const [isDarkMode, setIsDarkMode] = useState<Boolean>(
     typeof window !== 'undefined' && localStorage.getItem('theme') === 'dark'

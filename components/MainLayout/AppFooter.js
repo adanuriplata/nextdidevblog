@@ -1,10 +1,10 @@
 import React from "react";
-import MainLogoIcon from "/components/globals/icons/MainLogoIcon";
 import Link from "next/link";
-import LinkedinIcon from "/components/globals/icons/social/LinkedinIcon";
-import GithubIcon from "/components/globals/icons/social/GithubIcon";
-import InstagramIcon from "/components/globals/icons/social/InstagramIcon";
-import TwitterIcon from "/components/globals/icons/social/TwitterIcon";
+import { MainLogoIcon, LinkedinIcon, GithubIcon, InstagramIcon, TwitterIcon } from "/components/icons";
+// import { LinkedinIcon } from "/components/icons";
+// import GithubIcon from "/components/globals/icons/social/GithubIcon";
+// import InstagramIcon from "/components/globals/icons/social/InstagramIcon";
+// import TwitterIcon from "/components/globals/icons/social/TwitterIcon";
 
 const AppFooter = () => {
   const social = [

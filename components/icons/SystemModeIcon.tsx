@@ -1,6 +1,6 @@
 import * as React from "react"
 
-const SystemModeIcon = () => (
+export const SystemModeIcon = () => (
   <svg
     width={15}
     height={15}

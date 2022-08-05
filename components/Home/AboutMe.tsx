@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../globals/buttons/Button";
+import { Button } from "../ui";
 import style from "../../styles/components/ImageShadow.module.scss";
 import Image from "next/image";
 

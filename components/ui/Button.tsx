@@ -1,11 +1,11 @@
-import styles from "../../../styles/components/Button.module.scss";
+import styles from "../../styles/components/Button.module.scss";
 
 interface ButtonProps {
   link: string,
   copy: string,
 }
 
-const Button = ({ link, copy }: ButtonProps ) => {
+export const Button = ({ link, copy }: ButtonProps ) => {
   return (
     <a
       href={link}
