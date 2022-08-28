@@ -1,8 +1,10 @@
 import { ReactElement } from "react";
 import MainLayout from "../components/MainLayout";
+import courses from  "../contents/courses.json"
 
 
 const Formacion = () => {
+
   return (
     <>
       <section className="md:my-18 my-0">
@@ -21,8 +23,12 @@ const Formacion = () => {
         <div className="my-16">
           <h4 className="md:text-left text-xl my-3">👨‍🎓 Ingeniería Desarrollo de Software</h4>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 bg-gray-900 md:p-2 pl-0">
-          {/* {% set certType = 'dev' %} {#select certificatedType dev mkt ent #}
-          {% include "components/cert.njk" %} */}
+          {courses.courses.map( course => (
+            <div className="p-10 m-10">
+              <img src="" alt="" />
+              <p className="text-xs text-center" >{course.name}</p>
+            </div>
+          ))}
         </div>
       </div>
         <div className="my-16">
