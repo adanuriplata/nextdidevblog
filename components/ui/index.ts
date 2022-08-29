@@ -1,3 +1,5 @@
 export * from './DarkModeSwitch'
 export * from './Hero'
 export * from './Button'
+export * from './Course'
+export * from './PlaceHolderCourse'

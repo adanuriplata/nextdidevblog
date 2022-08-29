@@ -1,22 +1,37 @@
-{
-    "courses": [
-        {
-            "uid": 1,
-            "name": "Curso de Implementación de Tokens en Ethereum: ERC-20",
-            "img": "curso.jpg",
-            "category": "Web3"
-        },
-        {
-            "uid": 2,
-            "name": "Curso de Introducción a Tokens en Ethereum",
-            "img": "curso.jpg",
-            "category": "Web3"
-        },
-        {
-            "uid": 3,
-            "name": "Curso de JavaScript Engine (V8) y el Navegador",
-            "img": "curso.jpg",
-            "category": "Ingenieria de Software y Desarrollo"
-        }
-    ]
-}
+[   
+    {
+        "uid": 1,
+        "name": "Implementación de Tokens en Ethereum: ERC-20",
+        "img": "EcmaScript6.jpg",
+        "linkOriginal": "https://google.com",
+        "category": "Web3"
+    },
+    {
+        "uid": 2,
+        "name": "Introducción a Tokens en Ethereum",
+        "img": "EcmaScript6.jpg",
+        "linkOriginal": "https://google.com",
+        "category": "Web3"
+    },
+    {
+        "uid": 3,
+        "name": "JavaScript Engine (V8) y el Navegador",
+        "img": "EcmaScript6.jpg",
+        "linkOriginal": "https://google.com",
+        "category": "Ingenieria de Software y Desarrollo"
+    },
+    {
+        "uid": 4,
+        "name": "JavaScript Engine (V8) y el Navegador",
+        "img": "EcmaScript6.jpg",
+        "linkOriginal": "https://google.com",
+        "category": "Ingenieria de Software y Desarrollo"
+    },
+    {
+        "uid": 5,
+        "name": "JavaScript Engine (V8) y el Navegador",
+        "img": "EcmaScript6.jpg",
+        "linkOriginal": "https://google.com",
+        "category": "Ingenieria de Software y Desarrollo"
+    }
+]

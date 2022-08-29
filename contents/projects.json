@@ -1,16 +1,38 @@
-{
-    "projects": [
-        {
-            "uid": 123,
-            "name": "Curso de Implementación de Tokens en Ethereum: ERC-20",
-            "img": "curso.jpg",
-            "link": "https://"
-        },
-        {
-            "uid": 123,
-            "name": "Curso de Implementación de Tokens en Ethereum: ERC-20",
-            "img": "curso.jpg",
-            "link": "https://"
-        }
-    ]
-}
+ [
+    {
+        "uid": 1,
+        "name": "Curso de Implementación de Tokens en Ethereum: ERC-20",
+        "description": "E-commerce para venta de cursos online, integración Open Pay",
+        "img": "curso.jpg",
+        "link": "https://",
+        "technologies": ["WordPress", "Woocommerce"],
+        "category": "none"
+    },
+    {
+        "uid": 1,
+        "name": "Fairwind",
+        "description": "Landing page para campaña digital",
+        "img": "curso.jpg",
+        "link": "https://",
+        "technologies": ["WordPress", "Woocommerce"],
+        "category": "none"
+    },
+    {
+        "uid": 1,
+        "name": "Curso de Implementación de Tokens en Ethereum: ERC-20",
+        "description": "E-commerce para venta de cursos online, integración Open Pay",
+        "img": "curso.jpg",
+        "link": "https://",
+        "technologies": ["WordPress", "Woocommerce"],
+        "category": "none"
+    },
+    {
+        "uid": 1,
+        "name": "Curso de Implementación de Tokens en Ethereum: ERC-20",
+        "description": "E-commerce para venta de cursos online, integración Open Pay",
+        "img": "curso.jpg",
+        "link": "https://",
+        "technologies": ["WordPress", "Woocommerce"],
+        "category": "none"
+    }
+]
