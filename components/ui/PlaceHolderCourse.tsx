@@ -1,7 +1,10 @@
 
+interface PlaceHolderCourseProps{
+  quantity: number
+}
 
 
-export const PlaceHolderCourse = ({quantity}) => {
+export const PlaceHolderCourse = ({quantity}: PlaceHolderCourseProps) => {
 
   const placeHolderArray = Array.from(Array(quantity).keys())
 
