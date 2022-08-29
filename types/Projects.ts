@@ -1,7 +1,8 @@
 export interface ProjectData {
+  uid: number
   name: string,
   description: string,
-  technologies: [string],
-  image: string,
+  technologies: string,
   siteurl: string,
+  image: string,
 }

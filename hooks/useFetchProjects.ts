@@ -1,0 +1,30 @@
+import { useEffect, useState } from "react"
+
+
+export const useFetchProjects = () => {
+
+  const [projects, setProjects] = useState([])
+  const [isLoading, setIsLoading] = useState(false)
+
+  useEffect(() => {
+
+    const fetchProjects = (async () => {
+      try {
+        setIsLoading(true)
+        const response = await fetch('http://localhost:3000/api/projects')
+        const data = await response.json();
+        setProjects(data)
+        setIsLoading(false)
+      }
+     catch (error) {
+        console.error("Error to fetch data:", error)
+        setIsLoading(false)
+    }})
+    fetchProjects();
+
+  }, [])
+
+  return {isLoading, projects}
+}
+
+export default useFetchProjects

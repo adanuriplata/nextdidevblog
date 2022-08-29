@@ -21,7 +21,6 @@ export const useFetchCourses = () => {
       
     })
     getCourses();
-    console.log("me renderizo")
   }, [setCourses])
   
   return { isLoading, courses}
