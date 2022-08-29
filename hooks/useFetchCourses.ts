@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
+import { CourseData } from "../types";
 
 
 export const useFetchCourses = () => {
 
-  const [courses, setCourses] = useState([])
+  const [courses, setCourses] = useState<CourseData[]>([])
   const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {

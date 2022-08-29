@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
+import { ProjectData } from "../types"
 
 
 export const useFetchProjects = () => {
 
-  const [projects, setProjects] = useState([])
+  const [projects, setProjects] = useState<ProjectData[]>([])
   const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {

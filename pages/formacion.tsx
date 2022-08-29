@@ -2,6 +2,7 @@ import { ReactElement } from "react";
 import MainLayout from "../components/MainLayout";
 import { Course, PlaceHolderCourse } from "../components/ui";
 import { useFetchCourses } from "../hooks/useFetchCourses";
+import { CourseData } from "../types";
 
 
 
@@ -34,7 +35,7 @@ const Formacion = () => {
               <PlaceHolderCourse quantity={3} />
               :
             courses.filter( course => course.category == "Ingenieria de Software y Desarrollo")
-          . map( item => <Course key={item.uid} {...item} />)
+          . map( item => <Course key={item.uid } {...item} />)
             }
           </div>
         </div>
@@ -47,7 +48,7 @@ const Formacion = () => {
             <PlaceHolderCourse quantity={3} />
             :
             courses?.filter( course => course.category == "Marketing")
-            .map( item => <Course key={item.uid} {...item} />)
+            .map( item => <Course key={item.uid } {...item} />)
             }
           </div>
         </div>
@@ -60,7 +61,7 @@ const Formacion = () => {
             <PlaceHolderCourse quantity={3} />
             :
           courses?.filter( course => course.category == "Emprendimiento y Desarrollo Personal")
-          .map( item => <Course key={item.uid} {...item} />)
+          .map( item => <Course key={item.uid } {...item} />)
           }
           </div>
         </div>
@@ -73,7 +74,7 @@ const Formacion = () => {
             <PlaceHolderCourse quantity={3} />
             :
           courses?.filter( course => course.category == "Web3")
-          .map( item => <Course key={item.uid} {...item} />)
+          .map( item => <Course key={item.uid } {...item} />)
           }
           </div>
         </div>
