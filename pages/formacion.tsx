@@ -2,14 +2,12 @@ import { ReactElement } from "react";
 import MainLayout from "../components/MainLayout";
 import { Course, PlaceHolderCourse } from "../components/ui";
 import { useFetchCourses } from "../hooks/useFetchCourses";
-import { CourseData } from "../types";
 
 
 
 const Formacion = () => {
 
   const {isLoading, courses } = useFetchCourses()
-  console.log(isLoading)
   
   return (
     <>

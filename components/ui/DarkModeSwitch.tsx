@@ -64,7 +64,6 @@ export const DarkModeSwitch = () => {
 
   updateThemeMode();
   isSystemPreferenceChange();
-  console.log(isSystemSource)
 
   return (
     <>

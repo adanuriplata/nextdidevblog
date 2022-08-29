@@ -1,11 +1,9 @@
 import useFetchProjects from "../../../hooks/useFetchProjects";
-import { ProjectData } from "../../../types";
 import ItemPortfolio from "./ItemPortfolio";
 
 const Portfolio = () => {
 
   const {isLoading, projects} = useFetchProjects();
-  console.log(projects)
 
   return (
     <section

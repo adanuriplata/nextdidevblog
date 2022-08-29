@@ -12,7 +12,7 @@ export const useFetchProjects = () => {
     const fetchProjects = (async () => {
       try {
         setIsLoading(true)
-        const response = await fetch('http://localhost:3000/api/projects')
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_HOST}projects`);
         const data = await response.json();
         setProjects(data)
         setIsLoading(false)
