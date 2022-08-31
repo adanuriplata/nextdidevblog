@@ -1,7 +1,10 @@
-import projectsFixed from "./fakeData";
+import useFetchProjects from "../../../hooks/useFetchProjects";
 import ItemPortfolio from "./ItemPortfolio";
 
 const Portfolio = () => {
+
+  const {isLoading, projects} = useFetchProjects();
+
   return (
     <section
       className="md:mb-64 mb-36 md:py-24 py-8"
@@ -23,9 +26,15 @@ const Portfolio = () => {
           </p>
         </header>
         <div className="grid md:grid-rows-2 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-6">
-          {projectsFixed.map((e, i) => (
+          {
+            //TODO: isLoading add placeholder 
+            isLoading ? 
+             <p>is Loading....</p>
+            :
+          projects.map((e, i) => (
             <ItemPortfolio key={i} {...e} />
-          ))}
+          ))
+          }
         </div>
       </div>
     </section>

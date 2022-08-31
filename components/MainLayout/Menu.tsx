@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from 'next/router'
+import { DarkModeSwitch } from "../ui";
 
 interface MenuProps {
   menuMobile?: Boolean;
@@ -35,12 +36,11 @@ const menuItems = [
 
 const Menu = ({menuMobile= false}: MenuProps) => {
   const { asPath } = useRouter();
-  console.log(asPath)
 
   if(menuMobile) {
     return <div className=" md:hidden flex flex-wrap space-y-4 ">
     {menuItems.filter(item => item.isMobile).map((e) => (
-      <div key={e.id} className={`${ asPath === e.url ? 'bg-gray-700' : 'hover:bg-gray-700'} ' w-full py-2'`}>
+      <div key={e.id} className={`${ asPath === e.url ? 'bg-gray-700' : 'hover:bg-gray-700'} w-full py-2`}>
         <Link href={e.url}>
           <a className={' text-gray-300 w-full hover:bg font-sans items-center font-medium px-3 py-2 focus:outline-none rounded-md text-lg transition duration-500 ease-in-out'}>
             <span className="text-green-ddev">&gt; </span>
@@ -52,15 +52,16 @@ const Menu = ({menuMobile= false}: MenuProps) => {
   </div>
   }
   return (
-    <div className=" flex space-x-4 flex-wrap  ">
+    <div className=" flex space-x-4 flex-wrap items-center ">
     {menuItems.map((e) => (
       <Link key={e.id} href={e.url}>
-        <a className={` ${asPath === e.url ? 'bg-gray-700' : 'hover:bg-gray-700'} ' text-gray-300 font-sans items-center font-medium px-3 py-2 hover:bg focus:outline-none rounded-md transition duration-500 ease-in-out' `}>
+        <a className={` ${asPath === e.url ? 'bg-gray-700' : 'hover:bg-gray-700'} text-gray-300 font-sans items-center font-medium px-3 py-2 hover:bg focus:outline-none rounded-md transition duration-500 ease-in-out `}>
           <span className="text-green-ddev">&gt; </span>
           {e.name}
         </a>
       </Link>
     ))}
+      <DarkModeSwitch />
   </div>
   )
 

@@ -44,7 +44,7 @@ const Contact = () => {
             </span>
           </h2>
           <p>Platiquemos</p>
-          <p>También estoy en redes sociales como @distordev</p>
+          <p>También estoy en redes sociales como @AdanUriPlata</p>
         </header>
         <div className="mx-auto">
           <div

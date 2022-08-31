@@ -13,3 +13,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+svg:not(:root) {
+  overflow: visible;
+}

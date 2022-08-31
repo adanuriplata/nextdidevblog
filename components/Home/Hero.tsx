@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Button from "../globals/buttons/Button";
-import GithubIcon from "../globals/icons/social/GithubIcon";
-import InstagramIcon from "../globals/icons/social/InstagramIcon";
-import LinkedinIcon from "../globals/icons/social/LinkedinIcon";
-import TwitterIcon from "../globals/icons/social/TwitterIcon";
+import { Button } from "../ui";
+import GithubIcon from "../icons/social/GithubIcon";
+import InstagramIcon from "../icons/social/InstagramIcon";
+import LinkedinIcon from "../icons/social/LinkedinIcon";
+import TwitterIcon from "../icons/social/TwitterIcon";
 
 const Hero = () => {
   const social = [
@@ -12,7 +12,7 @@ const Hero = () => {
       icon: <GithubIcon />,
     },
     {
-      url: "https://www.instagram.com/distordev/",
+      url: "https://www.instagram.com/AdanUriPlata/",
       icon: <InstagramIcon />,
     },
     {
@@ -20,7 +20,7 @@ const Hero = () => {
       icon: <LinkedinIcon />,
     },
     {
-      url: "https://twitter.com/DistorDev",
+      url: "https://twitter.com/AdanUriPlata",
       icon: <TwitterIcon />,
     },
   ];
@@ -45,7 +45,7 @@ const Hero = () => {
                 </a>
               </Link>
             ))}
-            <span>@distordev</span>
+            <span>@AdanUriPlata</span>
           </div>
         </div>
         <p>

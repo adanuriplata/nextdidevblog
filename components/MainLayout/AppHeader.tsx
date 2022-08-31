@@ -3,7 +3,7 @@ import Link from "next/link";
 import Menu from "./Menu";
 import ButtonMenu from "./ButtonMenu";
 import { Transition } from "@headlessui/react";
-import MainLogoIcon from '../globals/icons/MainLogoIcon';
+import MainLogoIcon from '../icons/MainLogoIcon';
 
 const AppHeader = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);

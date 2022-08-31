@@ -12,6 +12,10 @@ const AppMeta = () => {
           content="width=device-width,initial-scale=-1"
           key="viewport"
         />
+                <link
+          rel='stylesheet'
+          href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css'
+        />
       </Head>
       <NextSeo 
           title="DistorDev"

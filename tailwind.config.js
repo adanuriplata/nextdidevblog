@@ -6,7 +6,7 @@ module.exports = {
       "./components/**/*.{js,ts,jsx,tsx}",
     ],
   // },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -20,7 +20,7 @@ module.exports = {
       fontFamily: {
         mono: ['"Fira Mono"'],
         sans: ["Montserrat"],
-        serif: ['"Red Hat Display"', "Merriweather"],
+        serif: ['Merriweather', '"Red Hat Display"'],
       },
     },
   },

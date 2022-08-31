@@ -1,10 +1,10 @@
 import React from "react";
-import MainLogoIcon from "/components/globals/icons/MainLogoIcon";
 import Link from "next/link";
-import LinkedinIcon from "/components/globals/icons/social/LinkedinIcon";
-import GithubIcon from "/components/globals/icons/social/GithubIcon";
-import InstagramIcon from "/components/globals/icons/social/InstagramIcon";
-import TwitterIcon from "/components/globals/icons/social/TwitterIcon";
+import { MainLogoIcon, LinkedinIcon, GithubIcon, InstagramIcon, TwitterIcon } from "/components/icons";
+// import { LinkedinIcon } from "/components/icons";
+// import GithubIcon from "/components/globals/icons/social/GithubIcon";
+// import InstagramIcon from "/components/globals/icons/social/InstagramIcon";
+// import TwitterIcon from "/components/globals/icons/social/TwitterIcon";
 
 const AppFooter = () => {
   const social = [
@@ -13,7 +13,7 @@ const AppFooter = () => {
       icon: <GithubIcon />,
     },
     {
-      url: "https://www.instagram.com/distordev/",
+      url: "https://www.instagram.com/AdanUriPlata/",
       icon: <InstagramIcon />,
     },
     {
@@ -21,7 +21,7 @@ const AppFooter = () => {
       icon: <LinkedinIcon />,
     },
     {
-      url: "https://twitter.com/DistorDev",
+      url: "https://twitter.com/AdanUriPlata",
       icon: <TwitterIcon />,
     },
   ];
@@ -36,7 +36,7 @@ const AppFooter = () => {
             </a>
           </Link>
           <div className="text-center m-0 md:text-sm text-xs leading-6 text-white-l-ddev">
-            <p>© 2021 | Diseño 🚀 Desarrollo - Adan Uri Plata</p>
+            <p>© 2022 | Diseño 🚀 Desarrollo - Adan Uri Plata</p>
             <p>
               🛠 con
               <a
@@ -77,7 +77,7 @@ const AppFooter = () => {
             ))}
           </div>
           <div className="text-center text-white-l-ddev mt-2 text-sm">
-            @distordev
+            @AdanUriPlata
           </div>
         </div>
       </div>

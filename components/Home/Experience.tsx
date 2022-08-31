@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../globals/buttons/Button";
+import {Button} from "../ui";
 
 const Experience = () => {
   return (
@@ -38,7 +38,7 @@ const Experience = () => {
           </div>
           <div className="md:w-1/2 w-full px-5">
             <div className="py-12">
-              <div className="flex items-center font-mono divide-x divide-green-500 my-5 md:flex-nowrap	flex-wrap	">
+              <div className="flex items-center font-mono divide-x divide-green-ddev my-5 md:flex-nowrap	flex-wrap	">
                 <div className="md:w-4/12 w-full px-5">
                   <p className="text-xl md:text-base">Desarrollo Web 👨‍💻</p>
                 </div>
@@ -50,7 +50,7 @@ const Experience = () => {
                   </ul>
                 </div>
               </div>
-              <div className="flex items-center font-mono divide-x divide-green-500 my-5 md:flex-nowrap	flex-wrap	">
+              <div className="flex items-center font-mono divide-x divide-green-ddev my-5 md:flex-nowrap	flex-wrap	">
                 <div className="md:w-4/12 w-full px-5">
                   <p className="text-xl md:text-base"> Marketing Digital 📈</p>
                 </div>

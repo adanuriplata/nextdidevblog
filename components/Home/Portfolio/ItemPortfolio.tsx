@@ -1,15 +1,10 @@
-import ArrowLinkIcon from "../../globals/icons/ArrowLinkIcon";
+import { ArrowLinkIcon } from "../../icons";
 import Image from "next/image";
+import { ProjectData } from "../../../types";
 
-interface ItemPortfolioProps {
-  name: string,
-  description: string,
-  technologies: string,
-  image: string,
-  siteurl: string,
-}
 
-const ItemPortfolio : React.FC<ItemPortfolioProps> = ({ name, description, technologies, image, siteurl } : ItemPortfolioProps) => {
+
+const ItemPortfolio : React.FC<ProjectData> = ({ name, description, technologies, image, siteurl } : ProjectData) => {
   return (
     <div className="transition duration-500 ease-in-out hover:bg-gray-800 bg-gray-900 border-gray-900 shadow-lg p-8 md:mx-0 mx-5 rounded-lg hover:shadow-solid border-2 hover:border-green-ddev hover:text-green-ddev ">
       <div className="mx-auto rounded-md">
