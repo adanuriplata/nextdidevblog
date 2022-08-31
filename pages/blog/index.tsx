@@ -15,10 +15,10 @@ const Blog = () => {
 
 export default Blog;
 
-Blog.getLayout = function getLayout(Contacto: ReactElement) {
+Blog.getLayout = function getLayout(Blog: ReactElement) {
   return (
     <MainLayout heroTitle="Blog" >
-      {Contacto}
+      {Blog}
     </MainLayout>
       ) 
 }

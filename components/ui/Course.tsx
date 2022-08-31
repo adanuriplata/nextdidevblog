@@ -9,7 +9,7 @@ export const Course = ({uid, img, linkOriginal, name}: CourseData) => {
         <Image src={`/img/courses/${img}`} loading="lazy" width={202} height={138}  alt="" />
       </div>
       <a href={linkOriginal} target="_blank" rel="noreferrer">
-        <p className="text-sm hover:text-green-ddev" >{name}</p>
+        <p className="text-sm hover:text-green-ddev transition duration-500 ease-in-out" >{name}</p>
       </a>
   </div>
   )

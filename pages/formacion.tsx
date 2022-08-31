@@ -20,7 +20,7 @@ const Formacion = () => {
       </section>
 
       <section className=" mt-16 bg-gray-900">
-        <h3 className="md:text-2xl text-xl text-center font-serif font-normal py-3"> Listado de últimos <br/> cursos aprobados y certificaciones:</h3>
+        <h3 className="md:text-2xl text-xl text-center font-normal py-3"> Listado de últimos <br/> cursos aprobados y certificaciones:</h3>
       </section>
 
       <section className="mt-12">

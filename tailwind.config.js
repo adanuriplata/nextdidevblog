@@ -20,7 +20,7 @@ module.exports = {
       fontFamily: {
         mono: ['"Fira Mono"'],
         sans: ["Montserrat"],
-        serif: ['"Red Hat Display"', "Merriweather"],
+        serif: ['Merriweather', '"Red Hat Display"'],
       },
     },
   },

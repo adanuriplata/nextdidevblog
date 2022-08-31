@@ -20,7 +20,7 @@ export const PostCard = ({title, date, category}: PostCardProps ) => {
 
             <div className="pt-4 pb-2">
                 <a  href="">
-                    <h3 className=" text-xl hover:text-white transition duration-700 ease-in-out">Errores comunes al crear una campaña de Google Ads</h3>
+                    <h3 className=" text-xl hover:text-white transition duration-500 ease-in-out">Errores comunes al crear una campaña de Google Ads</h3>
                 </a>
             </div>
         </div>
