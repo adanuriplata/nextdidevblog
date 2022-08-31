@@ -1,10 +1,12 @@
-import MainLayout from "../../components/MainLayout";
-import { ReactElement } from "react";
+import MainLayout from "../../MainLayout";
+import { PropsWithChildren, ReactElement } from "react";
 import Image from "next/image";
 
 
-export const Post = () => {
+
+export const ContainerPost = ({children}: PropsWithChildren) => {
     return (
+        <MainLayout>
         <div className="m-auto max-w-3xl ">
             {/* HEADER */}
             <div className="max-w-lg m-auto">
@@ -34,32 +36,20 @@ export const Post = () => {
 
             {/* CONTENT */}
             <article className="py-5 font-serif text-lg font-light " >
-                <p className="m-2">
-                Cuando me piden realizar asesorias para google ads 
-                </p>
-                <p className="m-2">
-One of the best characteristics of cryptocurrency is that it’s decentralized. Decentralized finance, (DeFi)  has caught the eye of many traders. Liquidity pools are a main component of a DeFi, or a DEX (decentralized exchange) platform. Liquidity pools stabilize the DEX market. Without them, the entire system falls apart.
-
-                </p>
-        <p className="m-2">
-        One of the best characteristics of cryptocurrency is that it’s decentralized. Decentralized finance, (DeFi)  has caught the eye of many traders. Liquidity pools are a main component of a DeFi, or a DEX (decentralized exchange) platform. Liquidity pools sta
-
-        One of the best characteristics of cryptocurrency is that it’s decentralized. Decentralized finance, (DeFi)  has caught the eye of many traders. Liquidity pools are a main component of a DeFi, or a DEX (decentralized exchange) platform. Liquidity pools sta
-
-        </p>
-
+{children}
             </article>
         </div>
+        </MainLayout>
 
     )
 }
 
-export default Post;
+export default ContainerPost;
 
-Post.getLayout = function getLayout(Post: ReactElement) {
-    return (
-      <MainLayout>
-        {Post}
-      </MainLayout>
-        ) 
-  }
+// ContainerPost.getLayout = function getLayout(ContainerPost: ReactElement) {
+//     return (
+//       <MainLayout>
+//         {ContainerPost}
+//       </MainLayout>
+//         ) 
+//   }
