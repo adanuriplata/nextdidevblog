@@ -2,18 +2,21 @@
 title: UTM - Mide todas tus acciones de mkt digital y organízalo en Analytics 
 cover: 2021/04/utmgoogleanalytics.jpeg
 excerpt: Mide todas tus acciones de mkt digital y organízalo en Analytics | Muchos profesionales del marketing digital aun desconocen el poderoso uso de las utm. En este post te mostrarte los beneficios y como con 2 minutos ...
-date: 2021-04-18
-seo:
-  siteImage: 2021/04/utmgoogleanalytics.jpeg
-  title: Medir campañas digitales con UTM Google Analytics
-tags: 
-  - Google Analytics, Ads
+date: 18 Abril, 2021
+category: Marketing
 ---
 
-import  {ContainerPost}  from '../../components/ui'
+import  {WrapperPost}  from '/components/ui'
+import Image from 'next/image'
 
 export const meta = {
-author: 'Rich Haines'
+title: 'UTM - Mide todas tus acciones de mkt digital y organízalo en Analytics',
+cover: '2021/04/utmgoogleanalytics.jpeg',
+excerpt: 'Mide todas tus acciones de mkt digital y organízalo en Analytics | Muchos profesionales del marketing digital aun desconocen el poderoso uso de las utm. En este post te mostrarte los beneficios y como con 2 minutos ...',
+date: '18 Abril, 2021',
+author: 'Adan Uri Plata',
+authorUserName: '@adanuriplata',
+category: 'Marketing'
 }
 
 
@@ -33,13 +36,13 @@ Muchos profesionales del marketing digital aun desconocen el poderoso uso de las
 
 > UTM en marketing digital es la forma de darle mas información acerca de tus campañas a Google Analytics.
 
-- Hey! Google Analytics tú lo sabes todo pero cuando den clic en este enlace: márcalo como enviado desde la campaña regreso a clases y ponle que fue un banner azul con la imagen de 2 niños felices publicado en instagram.
+- Hey Google Analytics! tú lo sabes todo pero cuando den clic en este enlace: márcalo como enviado desde la campaña regreso a clases y ponle que fue un banner azul con la imagen de 2 niños felices publicado en instagram.
 
 ## Técnicamente que es UTM
 
 Poniéndonos en *technical mode* las utm son variables con información que viajan través de la url. Cuando enviamos una petición al servidor usamos una dirección url por ejemplo:
 
-`https://fuzzjs.com/usuarios`
+`https://adanplata.com/usuarios`
 
 En el ejemplo anterior le decimos al navegador que queremos llegar a dicha dirección. El servidor donde se encuentra alojado el sitio web recibe la petición de mostrar lo que hay en la dirección "usuarios" y entonces muestra la página.
 
@@ -63,7 +66,7 @@ Parametro:  ?usuario=pedro
 
 Ahora cuando el servidor reciba la petición también recibirá un parámetro donde se le indica que el usuario a buscar es Pedro, internamente la pagina en su código tendrá funciones que interpretaran esa información y realizaran la búsqueda.
 
-`https://fuzzjs.com/oferta-regreso-a-clases?medio="google"`
+`https://adanplata.com/oferta-regreso-a-clases?medio="google"`
 
 Listo ahora ya sabes de forma general cómo funciona puede sonar un poco complejo pero créeme es muy sencillo y ya veras como lo puedes hacer sin aprenderte ningún código.
 
@@ -73,7 +76,9 @@ Con la información anterior seguramente estas pensando que agregando código c�
 
 > Google tiene una serie de herramientas que nos ayudan a hacer más facíl estas y otras tareashttps://ga-dev-tools.appspot.com/campaign-url-builder/
 
-![campaign url builder](/assets/img/2021/04/camping-url-builder.jpg)
+<div className=" max-w-sm m-auto " >
+	<Image src="/img/posts/2021/04/camping-url-builder.jpg" loading="lazy" alt="campaign url builder" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+</div>
 
 Google UTM BUILDER GA DEV TOOLS
 
@@ -83,7 +88,9 @@ En en el enlace anterior encontraras una herramienta que nos permite ir llenando
 
 El formulario cuenta con 6 campos de los cuales solo 3 son obligatorios.En ellos podrás ingresar la información de tu campaña.
 
-![utm builder form](/assets/img/2021/04/camping-url-builder-form.jpg)
+<div className=" max-w-sm m-auto " >
+	<Image src="/img/posts/2021/04/camping-url-builder-form.jpg" loading="lazy" alt="utm builder form" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+</div>
 
 UTM BUILDER FORM
 
@@ -92,7 +99,7 @@ A continuación  veremos una tabla donde se informa que deberias llenar en cada 
 Tomemos como ejemplo un colegio que busca implementar una campaña de regreso a clases donde buscas promocionar un descuento con un banner que colocaras en el sitio web de un blog de noticias para padres llamado serpadre.com
 
 
-<div class="table-wrapper" markdown="block">
+<div className="table-wrapper" markdown="block">
 
 | CAMPO                    | CONTENIDO                                          | EJEMPLO |
 | -----------              | -------------------------------------------------- | ------- |
@@ -105,20 +112,25 @@ Tomemos como ejemplo un colegio que busca implementar una campaña de regreso a 
 
 </div>
 
-
-![utm builder content](/assets/img/2021/04/camping-url-builder-form-full.jpg)
+<div className=" max-w-sm m-auto " >
+	<Image src="/img/posts/2021/04/camping-url-builder-form-full.jpg" loading="lazy" alt="utm builder content" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+</div>
 
 UTM BUILDER CONTENT
 
 Ahora que ya tenemos los campos con nuestra información podemos ver abajo que se ha generado la url con la información necesaria que podra reconocer Google Analytics.
 
-![url utm generada con google](/assets/img/2021/04/camping-url-builder-shortener.jpg)
+<div className=" max-w-sm m-auto " >
+	<Image src="/img/posts/2021/04/camping-url-builder-shortener.jpg" loading="lazy" alt="camping url builder shortener" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+</div>
 
 Sin embargo la url puede ser muy larga y no tan fácil  de compartir por ese motivo tenemos una  opción  de acortar nuestra url.
 
 Podemos presionar en *Convert URL to Short Link  y obtener una url corta*
 
-![url acortada utm generada con google](/assets/img/2021/04/camping-url-builder-shortener-2.jpg)
+<div className=" max-w-sm m-auto " >
+	<Image src="/img/posts/2021/04/camping-url-builder-shortener-2.jpg" loading="lazy" alt="url acortada utm generada con google" width="100%" height="100%" layout="responsive" objectFit="contain"/>
+</div>
 
 Listo ahora puedes colocar esa url en el enlace de tus campañas y cuando tus usuarios interactúen con tu campaña podrás saber exactamente de dónde provienen esos clics y por que medio o fuente tu campaña tiene mejor rendimiento.
 
@@ -128,4 +140,4 @@ Coméntanos que otra herramienta conoces de medición y si te fue util comparte 
 
 
 
-export default ({ children }) => <ContainerPost meta={meta}>{children}</ContainerPost>
+export default ({ children }) => <WrapperPost meta={meta}>{children}</WrapperPost>

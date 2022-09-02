@@ -1,2 +1,2 @@
 export * from './PostCard';
-export * from './ContainerPost';
+export * from './WrapperPost';

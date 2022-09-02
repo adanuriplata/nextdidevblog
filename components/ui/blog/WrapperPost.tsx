@@ -1,16 +1,26 @@
 import MainLayout from "../../MainLayout";
-import { PropsWithChildren, ReactElement } from "react";
+import { FC, PropsWithChildren } from "react";
 import Image from "next/image";
 
+interface WrapperPostProps {
+    meta: {
+        title: string,
+        cover: string,
+        excerpt: string,
+        date: string,
+        author: string,
+        authorUserName: string,
+        image: string
+    }
+}
 
-
-export const ContainerPost = ({children}: PropsWithChildren) => {
+export const WrapperPost: FC<PropsWithChildren<WrapperPostProps>> = ({meta, children}) => {
     return (
         <MainLayout>
         <div className="m-auto max-w-3xl ">
             {/* HEADER */}
             <div className="max-w-lg m-auto">
-                <h1 className="font-mono text-3xl text-center my-4 text-white-l-ddev">Errores comunes al crear una campaña de Google Ads</h1>
+                <h1 className="font-mono text-3xl text-center my-4 text-white-l-ddev">{meta.title}</h1>
 
                 <div className="flex justify-between items-center m-3">
                     <div className="flex items-center text-xs space-x-3 ">
@@ -24,27 +34,27 @@ export const ContainerPost = ({children}: PropsWithChildren) => {
                             />
                         </div>
                         <div>
-                            <p className="font-mono text-green-ddev">Adan Uri Plata</p>
-                            <p className="font-mono  ">@adanuriplata</p>
+                            <p className="font-mono text-green-ddev">{meta.author}</p>
+                            <p className="font-mono  ">{meta.authorUserName}</p>
                         </div>
                     </div>
                     <div>
-                        <p className="text-sm font-mono text-orange-ddev ">Feb 11, 2021</p>   
+                        <time className="text-sm font-mono text-orange-ddev ">{meta.date}</time>   
                     </div>
                 </div>
             </div>
 
             {/* CONTENT */}
-            <article className="py-5 font-serif text-lg font-light " >
-{children}
-            </article>
+            <div className="py-5 font-serif text-lg font-light markdown">
+                {children}
+            </div>
         </div>
         </MainLayout>
 
     )
 }
 
-export default ContainerPost;
+export default WrapperPost;
 
 // ContainerPost.getLayout = function getLayout(ContainerPost: ReactElement) {
 //     return (
