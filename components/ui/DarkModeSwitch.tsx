@@ -67,11 +67,15 @@ export const DarkModeSwitch = () => {
 
   return (
     <>
-      <div className={`${false ? 'bg-gray-700' : 'hover:bg-gray-700'} cursor-pointer text-gray-300 font-sans items-center font-medium px-3 py-2 hover:bg focus:outline-none rounded-md transition duration-500 ease-in-out `} onClick={() => {
+    {/* 2 SEP 2020 Button hide darkmode */}
+      {/* <div className={`${false ? 'bg-gray-700' : 'hover:bg-gray-700'} cursor-pointer text-gray-300 font-sans items-center font-medium px-3 py-2 hover:bg focus:outline-none rounded-md transition duration-500 ease-in-out `} onClick={() => {
         setIsDarkMode(!isDarkMode) 
         setSystemSource(false)} }>
             <DarkModeIcon />
-      </div>
+      </div> */}
+    {/* 2 SEP 2020 Button hide darkmode */}
+
+    
       {/* TODO: solve details of not matching server and client styles */}
       {/* <div className={`${isSystemSource ? 'bg-gray-700' : 'hover:bg-gray-700'} cursor-pointer text-gray-300 font-sans items-center font-medium px-3 py-2 hover:bg focus:outline-none rounded-md transition duration-500 ease-in-out `} onClick={() => {
         // setIsDarkMode(!isDarkMode) 
