@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import {NextSeo} from 'next-seo'
+import {DefaultSeo} from 'next-seo'
+import SEO from '../../utils/next-seo.config';
 
 const AppMeta = () => {
   return (
@@ -17,10 +18,7 @@ const AppMeta = () => {
           href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css'
         />
       </Head>
-      <NextSeo 
-          title="Adan Uri Plata"
-          description="Frontend Developer | 👨🏽‍💻"
-        />
+      <DefaultSeo {...SEO}/>
     </>
   );
 };
