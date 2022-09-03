@@ -9,12 +9,12 @@ const AboutMe = () => {
     <section className=" mb-14 md:py-40 py-16">
       <div className="">
         <h2 className="text-green-ddev text-3xl font-mono">
-          &gt;
+        <span className="animate-pulse">&gt;</span>
           <span
             className="text-white-l-ddev text-2xl pl-2 py-2"
             style={{ fontFamily: "'DotGothic16'" }}
           >
-            Acerca de mi
+            Acerca de mi _
           </span>
         </h2>
         <div className="md:flex my-12 justify-around">

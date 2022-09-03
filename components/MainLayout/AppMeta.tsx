@@ -14,7 +14,8 @@ interface AppMetaProps {
 const AppMeta = ({ title, description, canonical, cover }: AppMetaProps) => {
 
   const site = process.env.NEXT_PUBLIC_HOST
-  const URL = useRouter().pathname ? site + useRouter().pathname : useRouter().pathname;
+  const slug = useRouter().pathname
+  const URL = slug ? site + slug : slug;
 
 
 

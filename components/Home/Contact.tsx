@@ -35,12 +35,12 @@ const Contact = () => {
       <div className="mx-auto text-center" id="hubspotWrap">
         <header className="text-center mb-12">
           <h2 className="text-green-ddev text-3xl font-mono">
-            &gt;
+          <span className="animate-pulse">&gt;</span>
             <span
               className="text-white-l-ddev text-2xl pl-2 py-2"
               style={{ fontFamily: "'DotGothic16'" }}
             >
-              Contacto
+              Contacto _
             </span>
           </h2>
           <p>Platiquemos</p>

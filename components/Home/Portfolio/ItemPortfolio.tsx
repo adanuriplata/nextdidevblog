@@ -31,6 +31,7 @@ const ItemPortfolio : React.FC<ProjectData> = ({ name, description, technologies
       <div className="flex justify-end mt-4">
         <div className="px-4">
           <a href={siteurl} target="_BLANK" rel="noreferrer">
+            🔗
             {/* <ArrowLinkIcon className=" w-8 fill-current text-white-ddev" /> */}
           </a>
         </div>

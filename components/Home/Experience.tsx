@@ -7,13 +7,13 @@ const Experience = () => {
       className="md:mb-52 mb-36 md:py-16 py-8"
     >
       <div>
-        <h2 className="text-green-ddev text-3xl font-mono ">
-          &gt;
+        <h2 className="text-green-ddev text-3xl font-mono">
+          <span className="animate-pulse">&gt;</span>
           <span
             className="text-white-l-ddev text-2xl pl-2  py-2"
             style={{ fontFamily: "'DotGothic16'" }}
           >
-            Experiencia
+            Experiencia _
           </span>
         </h2>
         <div className="md:flex my-5 justify-around items-center">
