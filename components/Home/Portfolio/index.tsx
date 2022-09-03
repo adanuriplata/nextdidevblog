@@ -22,7 +22,7 @@ const Portfolio = () => {
             </span>
           </h2>
           <p className="text-lg">
-            Algunos de los últimos proyectos que he realizado
+            Algunos proyectos donde he participado
           </p>
         </header>
         <div className="grid md:grid-rows-2 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-6">

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { CourseData } from "../../types/Courses"
+import { CourseData } from "../../../types/Courses"
 
 
 export const Course = ({uid, img, linkOriginal, name}: CourseData) => {
