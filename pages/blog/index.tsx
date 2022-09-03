@@ -1,6 +1,7 @@
 import { GetStaticProps } from "next";
 import { ReactElement } from "react";
 import MainLayout from "../../components/MainLayout";
+import AppMeta from "../../components/MainLayout/AppMeta";
 import { PostCard } from "../../components/ui";
 import { PostData } from "../../types";
 import { getPosts } from "../../utils/postFunctions";
@@ -25,6 +26,10 @@ export default Blog;
 Blog.getLayout = function getLayout(Blog: ReactElement) {
   return (
     <MainLayout heroTitle="Blog" >
+      <AppMeta 
+        title='Blog'
+        description='Articulos sobre JavaScript, Desarrollo Web, Marketing, React, Web 3, y más.'
+      />
       {Blog}
     </MainLayout>
       ) 

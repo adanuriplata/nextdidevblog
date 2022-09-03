@@ -33,35 +33,35 @@ const AppMeta = ({ title, description, canonical, cover }: AppMetaProps) => {
       </Head>
       
       <NextSeo
-        title= {title ? title + '_' + AppConfig.site_name : AppConfig.site_name}
+        title= {title ? title + ' _ ' + AppConfig.site_name : AppConfig.site_name}
         description={description ? description : AppConfig.description}
         canonical={canonical ? canonical : URL}
         openGraph={{
           url: URL,
-          title: title ? title + '_' + AppConfig.site_name : AppConfig.site_name,
+          title: title ? title + ' _ ' + AppConfig.site_name : AppConfig.site_name,
           description: description ? description : AppConfig.description,
-          images: [
-            {
-              url: 'https://www.example.ie/og-image-01.jpg',
-              width: 800,
-              height: 600,
-              alt: 'Og Image Alt',
-              type: 'image/jpeg',
-            },
-            {
-              url: 'https://www.example.ie/og-image-02.jpg',
-              width: 900,
-              height: 800,
-              alt: 'Og Image Alt Second',
-              type: 'image/jpeg',
-            },
-            { url: 'https://www.example.ie/og-image-03.jpg' },
-            { url: 'https://www.example.ie/og-image-04.jpg' },
-          ],
+          // images: [
+          //   {
+          //     url: 'https://www.example.ie/og-image-01.jpg',
+          //     width: 800,
+          //     height: 600,
+          //     alt: 'Og Image Alt',
+          //     type: 'image/jpeg',
+          //   },
+          //   {
+          //     url: 'https://www.example.ie/og-image-02.jpg',
+          //     width: 900,
+          //     height: 800,
+          //     alt: 'Og Image Alt Second',
+          //     type: 'image/jpeg',
+          //   },
+          //   { url: 'https://www.example.ie/og-image-03.jpg' },
+          //   { url: 'https://www.example.ie/og-image-04.jpg' },
+          // ],
           site_name: AppConfig.site_name,
         }}
         twitter={{
-          handle: '@handle',
+          handle: AppConfig.username,
           site: AppConfig.username,
           cardType: 'summary_large_image',
         }}

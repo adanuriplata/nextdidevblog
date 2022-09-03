@@ -1,5 +1,6 @@
 import { ReactElement } from "react";
 import MainLayout from "../components/MainLayout";
+import AppMeta from "../components/MainLayout/AppMeta";
 import { Course, PlaceHolderCourse } from "../components/ui";
 import { useFetchCourses } from "../hooks/useFetchCourses";
 
@@ -88,6 +89,10 @@ export default Formacion;
 Formacion.getLayout = function getLayout(Formacion: ReactElement) {
   return (
     <MainLayout heroTitle="Formación Académica" >
+      <AppMeta 
+        title='Formación Académica'
+        description='La tecnología, industria que mas rápido avanza, cambia y mejora. El ser un profesional en tecnología exige hacer de la educación continua un habito y parte de nuestro trabajo diario'
+      />
       {Formacion}
     </MainLayout>
       )

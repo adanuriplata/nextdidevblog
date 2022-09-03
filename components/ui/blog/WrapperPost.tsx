@@ -1,6 +1,7 @@
 import MainLayout from "../../MainLayout";
 import { FC, PropsWithChildren } from "react";
 import Image from "next/image";
+import AppMeta from "../../MainLayout/AppMeta";
 
 interface WrapperPostProps {
     meta: {
@@ -17,6 +18,11 @@ interface WrapperPostProps {
 export const WrapperPost: FC<PropsWithChildren<WrapperPostProps>> = ({meta, children}) => {
     return (
         <MainLayout>
+            <AppMeta 
+                title={meta.title}
+                description={meta.excerpt}
+                cover={meta.cover}
+      />
         <div className="m-auto max-w-3xl ">
             {/* HEADER */}
             <div className="max-w-lg m-auto">
