@@ -23,10 +23,10 @@ export const WrapperPost: FC<PropsWithChildren<WrapperPostProps>> = ({meta, chil
                 description={meta.excerpt}
                 cover={meta.cover}
       />
-        <div className="m-auto max-w-3xl ">
+        <div className="m-auto max-w-3xl mt-20 py-5">
             {/* HEADER */}
-            <div className="max-w-lg m-auto">
-                <h1 className="font-mono text-3xl text-center my-4 text-white-l-ddev">{meta.title}</h1>
+            <div className="max-w-xl m-auto">
+                <h1 className="font-mono text-4xl text-center my-4 text-white-l-ddev">{meta.title}</h1>
 
                 <div className="flex justify-between items-center m-3">
                     <div className="flex items-center text-xs space-x-3 ">

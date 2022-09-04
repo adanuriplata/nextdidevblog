@@ -26,7 +26,7 @@ const Hero = () => {
   ];
   return (
     // <section className="md:py-40 py-8 md:max-w-3xl lg:max-w-7xl 2xl:pl-72 lg:pl-48 md:pl-32 px-8  ">
-    <section className="md:py-40 py-8"> 
+    <section className="md:py-40 py-8 mt-20 md:mt-0"> 
       <div>
         <p className="text-green-ddev font-mono">Hola, soy</p>
         <h1

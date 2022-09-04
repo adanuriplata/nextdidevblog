@@ -26,7 +26,7 @@ const Formacion = () => {
       <section className="mt-12">
 
         <CoursesCategory courses={courses} category={"Web 3"} isLoading={isLoading} />
-        <CoursesCategory courses={courses} category={"Ingeniería de Software y Desarrollo"} isLoading={isLoading} />
+        <CoursesCategory courses={courses} category={"Ingenieria de Software y Desarrollo"} isLoading={isLoading} />
         <CoursesCategory courses={courses} category={"Marketing"} isLoading={isLoading} />
         <CoursesCategory courses={courses} category={"Emprendimiento y Desarrollo Personal"} isLoading={isLoading} />
 

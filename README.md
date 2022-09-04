@@ -42,7 +42,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 |--/pages
 |----/index.js
 |----/blog
-|------/[slug].js
+|------/[slug].mdx
 |--/styles
 |----/global.css
 |--/utils

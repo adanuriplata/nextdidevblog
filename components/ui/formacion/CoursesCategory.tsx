@@ -4,7 +4,7 @@ import PlaceHolderCourse from "./PlaceHolderCourse"
 
 
 type categoryCourses = 
-'Ingeniería de Software y Desarrollo' 
+'Ingenieria de Software y Desarrollo' 
 | 'Web 3' 
 | 'Marketing' 
 | 'Emprendimiento y Desarrollo Personal' 
@@ -19,7 +19,7 @@ interface CourseCategoryProps {
 export const CoursesCategory = ({courses, category, isLoading}: CourseCategoryProps) => {
     return (
         <div className="my-16">
-            <h4 className="md:text-left text-xl my-3">{category == 'Marketing' ? '📉' : '👨‍🎓' } {category}</h4>
+            <h4 className="md:text-left text-xl my-3">{category == 'Marketing' ? '📉' : '👨‍🎓' } {category == 'Ingenieria de Software y Desarrollo' ? 'Ingeniería de Software y Desarrollo' : category}</h4>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 bg-gray-900 md:p-2 pl-0">
             {
                 isLoading ? 
