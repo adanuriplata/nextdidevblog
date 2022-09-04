@@ -28,6 +28,13 @@ const AppMeta = ({ title, description, canonical, cover }: AppMetaProps) => {
           content="width=device-width,initial-scale=-1"
           key="viewport"
         />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d0a1c" />
+        <meta name="msapplication-TileColor" content="#0d0a1c" />
+        <meta name="theme-color" content="#333333" />
         <link
           rel='stylesheet'
           href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css'
@@ -42,24 +49,24 @@ const AppMeta = ({ title, description, canonical, cover }: AppMetaProps) => {
           url: URL,
           title: title ? title + ' _ ' + AppConfig.site_name : AppConfig.site_name,
           description: description ? description : AppConfig.description,
-          // images: [
-          //   {
-          //     url: 'https://www.example.ie/og-image-01.jpg',
-          //     width: 800,
-          //     height: 600,
-          //     alt: 'Og Image Alt',
-          //     type: 'image/jpeg',
-          //   },
-          //   {
-          //     url: 'https://www.example.ie/og-image-02.jpg',
-          //     width: 900,
-          //     height: 800,
-          //     alt: 'Og Image Alt Second',
-          //     type: 'image/jpeg',
-          //   },
-          //   { url: 'https://www.example.ie/og-image-03.jpg' },
-          //   { url: 'https://www.example.ie/og-image-04.jpg' },
-          // ],
+          images: [
+            {
+              url: cover ? cover : '/img/og-image',
+              width: 800,
+              height: 600,
+              alt: '/img/Og Image Alt',
+              type: 'image/jpeg',
+            },
+            {
+              url: cover ? cover : '/img/og-image.jpg',
+              width: 900,
+              height: 800,
+              alt: '/img/Og Image Alt Second',
+              type: 'image/jpeg',
+            },
+            { url: cover ? cover : '/img/og-image.jpg' },
+            { url: cover ? cover : '/img/og-image.jpg' },
+          ],
           site_name: AppConfig.site_name,
         }}
         twitter={{
