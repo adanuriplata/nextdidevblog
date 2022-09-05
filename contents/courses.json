@@ -169,9 +169,93 @@
   },
   {
     "uid": 25,
-    "name": "Audiocurso de Historia de Ethereum y Smart Contracts",
+    "name": "Historia de Ethereum y Smart Contracts",
     "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2579-historia-ethereum/diploma/detalle/",
     "img": "audiocursodehistoriadeethereumycmartcontracts.jpg",
     "category": "Web 3"
+  },
+  {
+    "uid": 26,
+    "name": "Ethereum para Developers",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2560-ethereum-developers/diploma/detalle/",
+    "img": "EthereumparaDevelopers.jpg",
+    "category": "Web 3"
+  },
+  {
+    "uid": 27,
+    "name": "Fundamentos de Web 3",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2727-fundamentos-web3/diploma/detalle/",
+    "img": "Fundametosdeweb3.jpg",
+    "category": "Web 3"
+  },
+  {
+    "uid": 28,
+    "name": "Historia de Bitcoin y Criptomonedas",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2443-historia-bitcoin/diploma/detalle/",
+    "img": "HistoriadeBitcoinyCriptomonedas.jpg",
+    "category": "Web 3"
+  },
+  {
+    "uid": 29,
+    "name": "Introducción al Desarrollo de Aplicaciones Desentralizadas",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2562-intro-dapps/diploma/detalle/",
+    "img": "IntroduccionalDesarrollodeAplicacionesDescentralizadas.jpg",
+    "category": "Web 3"
+  },
+  {
+    "uid": 30,
+    "name": "Tokens en Ethereum: ERC-20",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2992-tokens-erc20/diploma/detalle/",
+    "img": "TokensenEthreum_ERC20.jpg",
+    "category": "Web 3"
+  },
+  {
+    "uid": 31,
+    "name": "Introduccion al Desarrollo de Blockchain: Contratos Inteligentes",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2561-smart-contracts/diploma/detalle/",
+    "img": "DesarrollodeBlockchain_ContratosInteligentes.jpg",
+    "category": "Web 3"
+  },
+  {
+    "uid": 32,
+    "name": "Introducción a Solidity",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2576-solidity/diploma/detalle/",
+    "img": "IntroduccionaSolidity.jpg",
+    "category": "Web 3"
+  },
+  {
+    "uid": 33,
+    "name": "Introducción a Los Tokens de Ethereum",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2991-introduccion-tokens-ethereum/diploma/detalle/",
+    "img": "IntroduccionalosTokensdeEthereum.jpg",
+    "category": "Web 3"
+  },
+  {
+    "uid": 34,
+    "name": "Git y Git Hub",
+    "linkOriginal": "https://www.udemy.com/certificate/UC-37d83274-d6dd-42ea-97ff-4acd38746c3f/",
+    "img": "GityGihubudemy.jpg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 35,
+    "name": "TypeScript",
+    "linkOriginal": "https://www.udemy.com/certificate/UC-0d69a4d6-9197-45d1-9d08-5d6573895369/",
+    "img": "TypeScriptUdemy.jpg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 36,
+    "name": "Manipulación de Arrays en Javascript",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2461-arrays/diploma/detalle/",
+    "img": "ManipulaciondeArraysenJavascript.jpg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 37,
+    "name": "Next.JS: Sitios Estáticos",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2362-nextjs-jamstack/diploma/detalle/",
+    "img": "Next.JSSitiosEstaticos.jpg",
+    "category": "Ingenieria de Software y Desarrollo"
   }
 ]
