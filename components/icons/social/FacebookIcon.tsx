@@ -1,9 +1,8 @@
-import * as React from "react";
+import * as React from 'react';
 
 interface FacebookIconProps {
-  props?: any
+  props?: any;
 }
-
 
 export function FacebookIcon(props: FacebookIconProps) {
   return (

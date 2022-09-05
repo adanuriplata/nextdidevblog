@@ -1,7 +1,7 @@
-import React from "react";
-import style from "../../../styles/components/ImageShadow.module.scss"
-import Image from "next/image";
-import Button from "../Button";
+import React from 'react';
+import style from '../../../styles/components/ImageShadow.module.scss';
+import Image from 'next/image';
+import Button from '../Button';
 
 export const AboutMe = () => {
   return (
@@ -9,7 +9,7 @@ export const AboutMe = () => {
     <section className=" mb-14 md:py-40 py-16">
       <div className="">
         <h2 className="text-green-ddev text-3xl font-mono">
-        <span className="animate-pulse">&gt;</span>
+          <span className="animate-pulse">&gt;</span>
           <span
             className="text-white-l-ddev text-2xl pl-2 py-2"
             style={{ fontFamily: "'DotGothic16'" }}
@@ -55,9 +55,9 @@ export const AboutMe = () => {
           </div>
           <div className="md:w-1/2 w-full py-4 px-2">
             <p className="mb-4">
-              👋 Soy Adan Uri Plata <br />{" "}
-              <span className="text-green-ddev">FrontEnd Developer React</span> formado
-              en la Benemérita Universidad Autónoma de Puebla estudiando{" "}
+              👋 Soy Adan Uri Plata <br />{' '}
+              <span className="text-green-ddev">FrontEnd Developer React</span>{' '}
+              formado en la Benemérita Universidad Autónoma de Puebla estudiando{' '}
               <span className="text-green-ddev">
                 Ciencias de la Computación.
               </span>

@@ -1,2 +1,2 @@
-export * from './Portfolio'
-export * from './ItemPortfolio'
+export * from './Portfolio';
+export * from './ItemPortfolio';

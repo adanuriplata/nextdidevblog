@@ -19,9 +19,9 @@ export const getPosts = () => {
       const { data, content } = matter(fileContent);
 
       const slug = file.name.replace(/.mdx$/, '');
-      return { data, content, slug } ;
+      return { data, content, slug };
     })
     .filter((post) => post);
 
-  return posts as PostData[]
+  return posts as PostData[];
 };

@@ -1,24 +1,30 @@
-import React from "react";
-import Link from "next/link";
-import { GithubIcon, InstagramIcon, LinkedinIcon, MainLogoIcon, TwitterIcon } from "../icons";
+import React from 'react';
+import Link from 'next/link';
+import {
+  GithubIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  MainLogoIcon,
+  TwitterIcon,
+} from '../icons';
 // import { MainLogoIcon, LinkedinIcon, GithubIcon, InstagramIcon, TwitterIcon } from "/components/icons";
 
 const AppFooter = () => {
   const social = [
     {
-      url: "https://github.com/adanuriplata",
+      url: 'https://github.com/adanuriplata',
       icon: <GithubIcon />,
     },
     {
-      url: "https://www.instagram.com/AdanUriPlata/",
+      url: 'https://www.instagram.com/AdanUriPlata/',
       icon: <InstagramIcon />,
     },
     {
-      url: "https://www.linkedin.com/in/adanuriplata/",
+      url: 'https://www.linkedin.com/in/adanuriplata/',
       icon: <LinkedinIcon />,
     },
     {
-      url: "https://twitter.com/AdanUriPlata",
+      url: 'https://twitter.com/AdanUriPlata',
       icon: <TwitterIcon />,
     },
   ];

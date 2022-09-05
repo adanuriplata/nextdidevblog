@@ -1,32 +1,32 @@
-import Link from "next/link";
-import GithubIcon from "../../icons/social/GithubIcon";
-import InstagramIcon from "../../icons/social/InstagramIcon";
-import LinkedinIcon from "../../icons/social/LinkedinIcon";
-import TwitterIcon from "../../icons/social/TwitterIcon";
-import Button from "../Button";
+import Link from 'next/link';
+import GithubIcon from '../../icons/social/GithubIcon';
+import InstagramIcon from '../../icons/social/InstagramIcon';
+import LinkedinIcon from '../../icons/social/LinkedinIcon';
+import TwitterIcon from '../../icons/social/TwitterIcon';
+import Button from '../Button';
 
 export const HeroHome = () => {
   const social = [
     {
-      url: "https://github.com/adanuriplata",
+      url: 'https://github.com/adanuriplata',
       icon: <GithubIcon />,
     },
     {
-      url: "https://www.instagram.com/AdanUriPlata/",
+      url: 'https://www.instagram.com/AdanUriPlata/',
       icon: <InstagramIcon />,
     },
     {
-      url: "https://www.linkedin.com/in/adanuriplata/",
+      url: 'https://www.linkedin.com/in/adanuriplata/',
       icon: <LinkedinIcon />,
     },
     {
-      url: "https://twitter.com/AdanUriPlata",
+      url: 'https://twitter.com/AdanUriPlata',
       icon: <TwitterIcon />,
     },
   ];
   return (
     // <section className="md:py-40 py-8 md:max-w-3xl lg:max-w-7xl 2xl:pl-72 lg:pl-48 md:pl-32 px-8  ">
-    <section className="md:py-40 py-8 mt-20 md:mt-0"> 
+    <section className="md:py-40 py-8 mt-20 md:mt-0">
       <div>
         <p className="text-green-ddev font-mono">Hola, soy</p>
         <h1
@@ -49,7 +49,7 @@ export const HeroHome = () => {
           </div>
         </div>
         <p>
-          Soy un <span className="text-green-ddev">Desarrollador Web</span> y{" "}
+          Soy un <span className="text-green-ddev">Desarrollador Web</span> y{' '}
           <span className="text-green-ddev">Growth Marketer</span> con amplia
           experiencia en React, Wordpress y Google Ads
         </p>

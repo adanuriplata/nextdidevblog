@@ -1,11 +1,9 @@
-import React from "react";
-import Button from "../Button";
+import React from 'react';
+import Button from '../Button';
 
 export const Experience = () => {
   return (
-    <section
-      className="md:mb-52 mb-36 md:py-16 py-8"
-    >
+    <section className="md:mb-52 mb-36 md:py-16 py-8">
       <div>
         <h2 className="text-green-ddev text-3xl font-mono">
           <span className="animate-pulse">&gt;</span>

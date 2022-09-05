@@ -1,2 +1,2 @@
-export * from './AppHeader'
-export * from './AppMeta'
+export * from './AppHeader';
+export * from './AppMeta';

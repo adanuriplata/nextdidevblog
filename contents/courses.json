@@ -1,179 +1,177 @@
-[   
-    {
-        "uid": 1,
-        "name": "Fundamentos de Javascript",
-        "linkOriginal": "https://platzi.com/p/adanuriplata/curso/1339-fundamentos-javascript/diploma/detalle/",
-        "img": "fundamentosdejavascript.jpeg",
-        "category": "Ingenieria de Software y Desarrollo"
-      },
-      {
-        "uid": 2,
-        "name": "MTA: Database Fundamentals",
-        "linkOriginal": "#",
-        "img": "databasefundamentals.jpeg",
-        "category": "Ingenieria de Software y Desarrollo"
-      },
-      {
-        "uid": 3,
-        "name": "Curso Profesional de Git y GitHub",
-        "linkOriginal": "https://platzi.com/p/fuzzJS/curso/1557-git-github/diploma/detalle/",
-        "img": "ProfesionaldeGityGitHub.jpeg",
-        "category": "Ingenieria de Software y Desarrollo"
-      },
-      { 
-        "uid": 4,
-        "name": "Programación orientada a objetos con PHP",
-        "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2034-php-poo/diploma/detalle/",
-        "img": "diploma-php-poo.jpeg",
-        "category": "Ingenieria de Software y Desarrollo"
-      },
-      {
-        "uid": 5,
-        "name": "Administración de bases de datos",
-        "linkOriginal": "https://capacitateparaelempleo.org/verifica/u9upem262/",
-        "img": "administradordebasededatos.jpeg",
-        "category": "Ingenieria de Software y Desarrollo"
-      },
-      {
-        "uid": 6,
-        "name": "Gestión de Dependencias y Paquetes con NPM",
-        "linkOriginal": "https://platzi.com/p/adanuriplata/curso/1763-npm/diploma/detalle/",
-        "img": "gestiondedependenciasypaquetesconnpm.jpeg",
-        "category": "Ingenieria de Software y Desarrollo"
-      },
-      {
-        "uid": 7,
-        "name": "Asincronismo con Javascript",
-        "linkOriginal": "https://platzi.com/p/adanuriplata/curso/1789-asincronismo-js/diploma/detalle/",
-        "img": "asincronismoconjavascript.jpeg",
-        "category": "Ingenieria de Software y Desarrollo"
-      },
-      {
-        "uid": 8,
-        "name": "Ecmascript 6",
-        "linkOriginal": "https://platzi.com/p/adanuriplata/curso/1815-ecmascript-6/diploma/detalle/",
-        "img": "ecmascript6.jpg",
-        "category": "Ingenieria de Software y Desarrollo"
-      },
-      {
-        "uid": 9,
-        "name": "Programador (orientado a objetos)",
-        "linkOriginal": "https://capacitateparaelempleo.org/verifica/u9upem262/",
-        "img": "programadororientadoaobjetos.jpeg",
-        "category": "Ingenieria de Software y Desarrollo"
-      },
-      {
-        "uid": 10,
-        "name": "Javascript Engine (v8)",
-        "linkOriginal": "https://platzi.com/p/adanuriplata/curso/1798-javascript-navegador/diploma/detalle/",
-        "img": "javascriptenginev8.jpeg",
-        "category": "Ingenieria de Software y Desarrollo"
-      },
-      {
-        "uid": 11,
-        "name": "Manejo de datos con PHP",
-        "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2032-datos-php/diploma/detalle/",
-        "img": "manejodedatosenphp.jpeg",
-        "category": "Ingenieria de Software y Desarrollo"
-      },
-      {
-        "uid": 12,
-        "name": "Curso esencial de Wordpress",
-        "linkOriginal": "https://platzi.com/p/fuzzJS/curso/1041-wordpress2016/diploma/detalle/",
-        "img": "cursoesencialdewordpress.jpeg",
-        "category": "Ingenieria de Software y Desarrollo"
-      },
-      {
-        "uid": 13,
-        "name": "PHP con Composer",
-        "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2024-php/diploma/detalle/",
-        "img": "phpconcomposer.jpeg",
-        "category": "Ingenieria de Software y Desarrollo"
-      },
-      {
-        "uid": 14,
-        "name": "Introducción a Frameworks de PHP",
-        "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2033-php-frameworks/diploma/detalle/",
-        "img": "introducciónaframeworksconphp.jpeg",
-        "category": "Ingenieria de Software y Desarrollo"
-      },
-      {
-        "uid": 15,
-        "name": "Certificación de Publicidad en Búsqueda de Google Ads",
-        "linkOriginal": "https://skillshop.exceedlms.com/student/award/28155464",
-        "img": "googleads.jpeg",
-        "category": "Marketing"
-      },
-      {
-        "uid": 16,
-        "name": "Certificación Google Analytics",
-        "linkOriginal": "https://analytics.google.com/analytics/academy/certificate/f_qK2_zlQyOlU4xKl5yhhg",
-        "img": "googleanalytics.jpg",
-        "category": "Marketing"
-      },
-      {
-        "uid": 17,
-        "name": "Curso de SEO Técnico",
-        "linkOriginal": "https://platzi.com/p/adanuriplata/curso/1992-seo-tecnico/diploma/detalle/",
-        "img": "seotecnico.jpg",
-        "category": "Marketing"
-      },
-      {
-        "uid": 18,
-        "name": "Curso de Email Marketing",
-        "linkOriginal": "https://platzi.com/p/fuzzJS/curso/117-email-marketing-2015/diploma/detalle/",
-        "img": "cursodeemailmarketing.jpeg",
-        "category": "Marketing"
-      },
-      {
-        "uid": 19,
-        "name": "Curso de Marketing Digital",
-        "linkOriginal": "#",
-        "img": "cursodemarketingdigital.jpeg",
-        "category": "Marketing"
-      },
-      {
-        "uid": 20,
-        "name": "Engineering Management",
-        "linkOriginal": "https://platzi.com/p/fuzzJS/curso/1732-eng-management/diploma/detalle/",
-        "img": "engineeringmanagement.jpeg",
-        "category": "Emprendimiento y Desarrollo Personal"
-      },
-      {
-        "uid": 21,
-        "name": "Tecnología para Gerentes y Directores",
-        "linkOriginal": "https://platzi.com/p/fuzzJS/curso/1882-tecnologia-gerentes/diploma/detalle/",
-        "img": "tecnologiaParaGerentesYdirectores.jpeg",
-        "category": "Emprendimiento y Desarrollo Personal"
-      },
-      {
-        "uid": 22,
-        "name": "Gestión Efectiva de Tiempo",
-        "linkOriginal": "https://platzi.com/p/adanuriplata/curso/1749-gestion-tiempo/diploma/detalle/",
-        "img": "gestionefectivadetiempo.jpeg",
-        "category": "Emprendimiento y Desarrollo Personal"
-      },
-      {
-        "uid": 23,
-        "name": "Organización y Productividad con Notion",
-        "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2226-notion/diploma/detalle/",
-        "img": "organizacionyproductividadconnotion.jpeg",
-        "category": "Emprendimiento y Desarrollo Personal"
-      },
-      {
-        "uid": 24,
-        "name": "Oratoria y Hablar en Publico",
-        "linkOriginal": "https://platzi.com/p/fuzzJS/curso/1285-hablar-en-publico/diploma/detalle/",
-        "img": "oratoriayhablarenpublico.jpeg",
-        "category": "Emprendimiento y Desarrollo Personal"
-      },
-      {
-        "uid": 25,
-        "name": "Audiocurso de Historia de Ethereum y Smart Contracts",
-        "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2579-historia-ethereum/diploma/detalle/",
-        "img": "audiocursodehistoriadeethereumycmartcontracts.jpg",
-        "category": "Web 3"
-      }
-    ]
-
-
+[
+  {
+    "uid": 1,
+    "name": "Fundamentos de Javascript",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/1339-fundamentos-javascript/diploma/detalle/",
+    "img": "fundamentosdejavascript.jpeg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 2,
+    "name": "MTA: Database Fundamentals",
+    "linkOriginal": "#",
+    "img": "databasefundamentals.jpeg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 3,
+    "name": "Curso Profesional de Git y GitHub",
+    "linkOriginal": "https://platzi.com/p/fuzzJS/curso/1557-git-github/diploma/detalle/",
+    "img": "ProfesionaldeGityGitHub.jpeg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 4,
+    "name": "Programación orientada a objetos con PHP",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2034-php-poo/diploma/detalle/",
+    "img": "diploma-php-poo.jpeg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 5,
+    "name": "Administración de bases de datos",
+    "linkOriginal": "https://capacitateparaelempleo.org/verifica/u9upem262/",
+    "img": "administradordebasededatos.jpeg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 6,
+    "name": "Gestión de Dependencias y Paquetes con NPM",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/1763-npm/diploma/detalle/",
+    "img": "gestiondedependenciasypaquetesconnpm.jpeg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 7,
+    "name": "Asincronismo con Javascript",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/1789-asincronismo-js/diploma/detalle/",
+    "img": "asincronismoconjavascript.jpeg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 8,
+    "name": "Ecmascript 6",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/1815-ecmascript-6/diploma/detalle/",
+    "img": "ecmascript6.jpg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 9,
+    "name": "Programador (orientado a objetos)",
+    "linkOriginal": "https://capacitateparaelempleo.org/verifica/u9upem262/",
+    "img": "programadororientadoaobjetos.jpeg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 10,
+    "name": "Javascript Engine (v8)",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/1798-javascript-navegador/diploma/detalle/",
+    "img": "javascriptenginev8.jpeg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 11,
+    "name": "Manejo de datos con PHP",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2032-datos-php/diploma/detalle/",
+    "img": "manejodedatosenphp.jpeg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 12,
+    "name": "Curso esencial de Wordpress",
+    "linkOriginal": "https://platzi.com/p/fuzzJS/curso/1041-wordpress2016/diploma/detalle/",
+    "img": "cursoesencialdewordpress.jpeg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 13,
+    "name": "PHP con Composer",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2024-php/diploma/detalle/",
+    "img": "phpconcomposer.jpeg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 14,
+    "name": "Introducción a Frameworks de PHP",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2033-php-frameworks/diploma/detalle/",
+    "img": "introducciónaframeworksconphp.jpeg",
+    "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 15,
+    "name": "Certificación de Publicidad en Búsqueda de Google Ads",
+    "linkOriginal": "https://skillshop.exceedlms.com/student/award/28155464",
+    "img": "googleads.jpeg",
+    "category": "Marketing"
+  },
+  {
+    "uid": 16,
+    "name": "Certificación Google Analytics",
+    "linkOriginal": "https://analytics.google.com/analytics/academy/certificate/f_qK2_zlQyOlU4xKl5yhhg",
+    "img": "googleanalytics.jpg",
+    "category": "Marketing"
+  },
+  {
+    "uid": 17,
+    "name": "Curso de SEO Técnico",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/1992-seo-tecnico/diploma/detalle/",
+    "img": "seotecnico.jpg",
+    "category": "Marketing"
+  },
+  {
+    "uid": 18,
+    "name": "Curso de Email Marketing",
+    "linkOriginal": "https://platzi.com/p/fuzzJS/curso/117-email-marketing-2015/diploma/detalle/",
+    "img": "cursodeemailmarketing.jpeg",
+    "category": "Marketing"
+  },
+  {
+    "uid": 19,
+    "name": "Curso de Marketing Digital",
+    "linkOriginal": "#",
+    "img": "cursodemarketingdigital.jpeg",
+    "category": "Marketing"
+  },
+  {
+    "uid": 20,
+    "name": "Engineering Management",
+    "linkOriginal": "https://platzi.com/p/fuzzJS/curso/1732-eng-management/diploma/detalle/",
+    "img": "engineeringmanagement.jpeg",
+    "category": "Emprendimiento y Desarrollo Personal"
+  },
+  {
+    "uid": 21,
+    "name": "Tecnología para Gerentes y Directores",
+    "linkOriginal": "https://platzi.com/p/fuzzJS/curso/1882-tecnologia-gerentes/diploma/detalle/",
+    "img": "tecnologiaParaGerentesYdirectores.jpeg",
+    "category": "Emprendimiento y Desarrollo Personal"
+  },
+  {
+    "uid": 22,
+    "name": "Gestión Efectiva de Tiempo",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/1749-gestion-tiempo/diploma/detalle/",
+    "img": "gestionefectivadetiempo.jpeg",
+    "category": "Emprendimiento y Desarrollo Personal"
+  },
+  {
+    "uid": 23,
+    "name": "Organización y Productividad con Notion",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2226-notion/diploma/detalle/",
+    "img": "organizacionyproductividadconnotion.jpeg",
+    "category": "Emprendimiento y Desarrollo Personal"
+  },
+  {
+    "uid": 24,
+    "name": "Oratoria y Hablar en Publico",
+    "linkOriginal": "https://platzi.com/p/fuzzJS/curso/1285-hablar-en-publico/diploma/detalle/",
+    "img": "oratoriayhablarenpublico.jpeg",
+    "category": "Emprendimiento y Desarrollo Personal"
+  },
+  {
+    "uid": 25,
+    "name": "Audiocurso de Historia de Ethereum y Smart Contracts",
+    "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2579-historia-ethereum/diploma/detalle/",
+    "img": "audiocursodehistoriadeethereumycmartcontracts.jpg",
+    "category": "Web 3"
+  }
+]

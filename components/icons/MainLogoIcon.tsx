@@ -1,7 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
 
 interface MainLogoIconProps {
-  props?: any
+  props?: any;
 }
 
 export function MainLogoIcon(props: MainLogoIconProps) {

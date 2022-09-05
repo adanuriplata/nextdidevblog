@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 export const Contact = () => {
   // useEffect(() => {
@@ -28,14 +28,11 @@ export const Contact = () => {
   // }, []);
 
   return (
-    <section
-      className="mb-36 md:py-12 py-8"
-      id="contacto"
-    >
+    <section className="mb-36 md:py-12 py-8" id="contacto">
       <div className="mx-auto text-center" id="hubspotWrap">
         <header className="text-center mb-12">
           <h2 className="text-green-ddev text-3xl font-mono">
-          <span className="animate-pulse">&gt;</span>
+            <span className="animate-pulse">&gt;</span>
             <span
               className="text-white-l-ddev text-2xl pl-2 py-2"
               style={{ fontFamily: "'DotGothic16'" }}
