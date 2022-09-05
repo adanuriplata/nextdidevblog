@@ -11,14 +11,11 @@ const Formacion = () => {
       <section className="md:my-18 my-0">
         <div>
           <p className="md:text-sm text-xs font-mono my-1 text-green-ddev">
-            {' '}
             <span className="text-3xl">👨‍💻</span> La tecnología,
           </p>
           <p className="md:text-4xl text-2xl leading-3 font-sans my-1">
-            {' '}
             industria que mas rápido
             <span className="text-green-ddev md:text-3xl text-xl">
-              {' '}
               avanza, cambia y mejora.
             </span>
           </p>
@@ -34,7 +31,6 @@ const Formacion = () => {
 
       <section className=" mt-16 bg-gray-900">
         <h3 className="md:text-2xl text-xl text-center font-normal py-3">
-          {' '}
           Listado de últimos <br /> cursos aprobados y certificaciones:
         </h3>
       </section>

@@ -27,7 +27,7 @@ export const CoursesCategory = ({
           ? 'Ingeniería de Software y Desarrollo'
           : category}
       </h4>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 bg-gray-900 md:p-2 pl-0">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 bg-gray-900 md:p-2 md:py-8 pl-0">
         {isLoading ? (
           <PlaceHolderCourse quantity={3} />
         ) : (
