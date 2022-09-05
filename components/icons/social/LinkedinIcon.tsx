@@ -1,7 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
 
 interface LinkedinIconProps {
-  props?: any
+  props?: any;
 }
 
 export function LinkedinIcon(props: LinkedinIconProps) {

@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from 'react';
 
 export const DarkModeIcon = () => (
   <svg
@@ -80,6 +80,6 @@ export const DarkModeIcon = () => (
       </clipPath>
     </defs>
   </svg>
-)
+);
 
-export default DarkModeIcon
+export default DarkModeIcon;

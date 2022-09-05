@@ -1,31 +1,29 @@
-import { useEffect, useState } from "react"
-import { ProjectData } from "../types"
-
+import { useEffect, useState } from 'react';
+import { ProjectData } from '../types';
 
 export const useFetchProjects = () => {
-
-  const [projects, setProjects] = useState<ProjectData[]>([])
-  const [isLoading, setIsLoading] = useState(false)
+  const [projects, setProjects] = useState<ProjectData[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-
-    const fetchProjects = (async () => {
+    const fetchProjects = async () => {
       try {
-        setIsLoading(true)
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_HOST}projects`);
+        setIsLoading(true);
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_HOST}projects`
+        );
         const data = await response.json();
-        setProjects(data)
-        setIsLoading(false)
+        setProjects(data);
+        setIsLoading(false);
+      } catch (error) {
+        console.error('Error to fetch data:', error);
+        setIsLoading(false);
       }
-     catch (error) {
-        console.error("Error to fetch data:", error)
-        setIsLoading(false)
-    }})
+    };
     fetchProjects();
+  }, []);
 
-  }, [])
+  return { isLoading, projects };
+};
 
-  return {isLoading, projects}
-}
-
-export default useFetchProjects
+export default useFetchProjects;

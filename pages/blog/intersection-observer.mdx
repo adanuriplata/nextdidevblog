@@ -1,0 +1,270 @@
+---
+title: Optimiza la carga del form de Hubspot
+cover: 2021/04/intersectionObserver-min.jpeg
+excerpt: Mejora la carga de tu sitio web evitando la carga del form de hubspot | Quita los recursos JavaScript que no se usen con Intersection Observer
+date: 21 Abril, 2021
+category: Javascript
+---
+
+import { WrapperPost } from '/components/ui';
+import Image from 'next/image';
+
+export const meta = {
+  title: 'Optimiza la carga del form de Hubspot',
+  cover: '2021/04/intersectionObserver-min.jpeg',
+  excerpt:
+    'Mejora la carga de tu sitio web evitando la carga del form de hubspot | Quita los recursos JavaScript que no se usen con Intersection Observer',
+  date: '18 Abril, 2021',
+  author: 'Adan Uri Plata',
+  authorUserName: '@adanuriplata',
+  category: 'Javascript',
+};
+
+Hubspot es sin duda uno de los mejores CRM que existen en el mercado actualmente y una herramienta muy utilizada en el marketing digital pero...
+Incrustar uno de sus forms también ayudan a que nuestra página se ponga lenta.
+
+Y si decides hacer un test en Google Speed te saldrá que ese código de hubspot que incrustaste es la causa de tener muchos puntos menos.
+
+<div className=" max-w-sm m-auto ">
+  <Image
+    src="/img/posts/2021/04/eliminar_los_recursos_que_Bloquean_el_renderizado.webp"
+    loading="lazy"
+    alt="google page speed"
+    width="80%"
+    height="80%"
+    layout="responsive"
+    objectFit="contain"
+  />
+</div>
+
+> Los scripts de terceros pueden ser el principal motivo para disminuir puntos en el score de Google PageSpeed.
+
+## ¿Cómo Eliminar los Recursos que Bloquean el Renderizado?
+
+Si estas aquí es porque seguro ya notaste que el incrustar un form de hubspot esta destrozando nuestro score en Google PageSpeed Insights. Pero en este post te contare como solucionarlo.
+
+Para arreglar esto haremos uso de Javascript y su API [Intersection Observer](https://developer.mozilla.org/es/docs/Web/API/Intersection_Observer_API)
+
+### Acerca del código de hubspost
+
+Ok, en nuestro primer paso analizaremos el código que nos da Hubspot para incrustar.
+
+<div className=" max-w-sm m-auto ">
+  <Image
+    src="/img/posts/2021/04/Codigo-form-Hubspot.webp"
+    loading="lazy"
+    alt="Formulario hubspot"
+    width="80%"
+    height="80%"
+    layout="responsive"
+    objectFit="contain"
+  />
+</div>
+
+Algo como esto
+
+```js
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+<script>
+  hbspt.forms.create({
+	region: "na1",
+	portalId: "xxxxxxx",
+	formId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+});
+</script>
+```
+
+Lo primero que tenemos es una etiqueta script para cargar un un archivo .js externo desde la dirección js.hsforms.net/forms/shell.js
+
+Nada del otro mundo.
+
+```js
+<script
+  charset="utf-8"
+  type="text/javascript"
+  src="//js.hsforms.net/forms/shell.js"
+></script>
+```
+
+Despúes tenemos el llamado a la función `hbspt.forms.create()` a la cual le pasamos como parámetros un objeto con las propiedades `region, portalId` y `formId` con lo cual se creara dinámicamente el form tomando nuestros datos de la cuenta de hubspot.
+
+```js
+
+<script>
+  hbspt.forms.create({
+	region: "na1",
+	portalId: "xxxxxxx",
+	formId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+});
+</script>
+```
+
+El uso común es que nosotros incrustamos este código en el lugar exacto donde queramos que aparezca el sitio web, pero si por ejemplo nuestro form aparece hasta el final de la página (un uso general en landing pages) **no vale la pena cargar este script desde el inicio de nuestra página.**
+
+Por lo cual vamos a hacer que **los 2 scripts se generen dinámicamente** hasta que el usuario llegue a la sección donde se visualizara el form, de esta forma la petición será exclusivamente **cuando se necesite.**
+
+## Como usar Intersection Observer
+
+_Intersection Observer_ en resumen nos permite disparar una acción cuando un elemento de nuestra página aparece en el viewport.
+
+Para mayor inforamción la documentación de [MDN](https://developer.mozilla.org/es/docs/Web/API/Intersection_Observer_API) es la mejor.
+
+> El objeto Intersection Observer recibe como parámetro una función callback y un objeto de opciones llamada options donde se decidirá por que acción será invocada la función callback.
+
+A continuación, crearemos la estructura de nuestro Intersection Observer.
+
+### Estructura de Intersection Observer
+
+Instanciamos el objeto y lo guardamos en la constante `hubspotObserver` pasamos como primer parámetro una arrow function y como segundo la opción threshold con el valor 0 (lo que significa que tan pronto como un píxel sea visible, la función callback será ejecutada).).
+
+> threshold
+> Es un número o un array de números que indican a que porcentaje de visibilidad del elemento target, la función callback del observer debería ser ejecutada.
+
+```js
+const hubspotObserver = new IntersectionObserver(() => {}, { treshold: [0] }); // <<--- se desestructuro el objeto options para dejar solo treshold
+```
+
+Ya creado el observer necesitamos decirle cual será el elemento que va a observar, para este caso podría ser el inicio de la sección donde estará nuestro formulario y tendría que ser un id. Ahora lo llamaremos `hubspotWrap`
+
+Por medio de un `querySelector` traeremos el elemento `#hubspotWrap` y lo pasaremos como parámetro a la función `observe` de nuestro observador `hubspotObserver`
+
+```js
+hubspotObserver.observe(document.querySelector('#hubspotWrap'));
+```
+
+De esta forma cuando el usuario llegue al primer píxel del div con el id hubspotWrap se disparará una acción.
+
+```js
+//Arriba mas secciones del sitio web
+
+//Aqui inica nuestra seccion con el form
+<div id="hubspotWrap">
+   <!-- aqui aparecera nuestro form -->
+</div>
+
+// Inicia script de nuestro observer
+const hubspotObserver = new IntersectionObserver( () => {
+	//Aqui va lo que queremos que haga
+}, { treshold: [0] } );
+
+hubspotObserver.observe(document.querySelector("#hubspotWrap"));
+```
+
+Listo ya tenemos nuestro observador ahora vamos a crear dinámicamente el script que nos dio hubspot.
+
+## Creando el script de hubspot dinámicamente
+
+Empezamos con la función callback de nuestro observador, lo primero es pasarle la lista de objetos
+[IntersectionObserverEntry](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry)
+de la cual usaremos la propiedad `isIntersecting` la cual devuelve `true` si se realiza la intersección.
+
+De esta forma validamos que ya esta nuestro elemento en el viewport del usuario.
+
+```js
+const hubspotObserver = new IntersectionObserver(
+  (entries) => {
+    if (entries[0].isIntersecting) {
+    }
+  },
+  { treshold: [0] }
+);
+```
+
+> IntersectionObserverEntry
+> Describe la intersección entre el elemento de destino y su contenedor raíz en un momento específico de transición.
+
+### Llamando al script shell.js de hubspot
+
+Primero vamos a crear la etiqueta script que carga el archivo .js externo de hubspot
+
+```js
+<script
+  charset="utf-8"
+  type="text/javascript"
+  src="//js.hsforms.net/forms/shell.js"
+></script>
+```
+
+Creamos la constante `s` la cual contendrá un elemento `script` y después le asignamos sus propiedades `charset`, `type` , `src` y por ultimo lo incrustamos en el header del DOM
+
+```js
+const s = document.createElement('script');
+s.src = '//js.hsforms.net/forms/shell.js';
+s.charset = 'utf-8';
+s.type = 'text/javascript';
+document.head.appendChild(s);
+```
+
+Ahora tendríamos esto:
+
+```js
+const hubspotObserver = new IntersectionObserver( (entries) => {
+	if(entries[0].isIntersecting) {
+			function() {
+				const s = document.createElement('script');
+				s.src = '//js.hsforms.net/forms/shell.js';
+				s.charset = 'utf-8';
+				s.type = 'text/javascript';
+				document.head.appendChild(s)
+    }
+}, { treshold: [0] } );
+
+hubspotObserver.observe(document.querySelector("#hubspotWrap"));
+```
+
+Hasta aquí **la carga de nuestro script se realiza justo hasta que el usuario llega a donde esta nuestro form** y no desde que carga nuestro sitio por primera vez.
+
+Pero ahora queda el pequeño detalle de que no se crea el form para eso debería bastar con agregar la segunda parte del script que nos dio hubspot.
+
+### Llamando a la función create de hubspot
+
+Agregamos la propiedad `target` al objeto para indicar en que elemento haremos el render del form en este caso sera para el id `#divFormHolder`
+
+```js
+hbspt.forms.create({
+  region: 'na1',
+  portalId: 'xxxxxxx',
+  formId: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
+  target: '#divFormHolder',
+});
+```
+
+El detalle aqui es que cuando llamamos al metodo `create()` de hubspot aun no ha terminado de cargar completamente el script que generamos dinamicamente de hubspot.
+
+Para resolver esto realizaremos una validación para disparar y un [setTimeOut](https://developer.mozilla.org/es/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) de unos milisegundos para terminar de cargar el script y entonces llamar a la función `create` de hubspot.
+
+Por ultimo detendremos el observador con la función `disconnect();`
+
+Quedando el código final de esta forma:
+
+```js
+const hubspotObserver = new IntersectionObserver(
+  (entries) => {
+    if (entries[0].isIntersecting) {
+      const s = document.createElement('script');
+      s.src = '//js.hsforms.net/forms/shell.js';
+      s.charset = 'utf-8';
+      s.type = 'text/javascript';
+      if (document.head.appendChild(s)) {
+        setTimeout(function () {
+          hbspt.forms.create({
+            region: 'na1',
+            portalId: 'xxxxxxx',
+            formId: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
+            target: '#divFormHolder',
+          });
+        }, 350);
+      }
+      hubspotObserver.disconnect();
+    }
+  },
+  { treshold: [0] }
+);
+hubspotObserver.observe(document.querySelector('#hubspotWrap'));
+```
+
+_Ahora puedes ir a Google Speed y ver como ganaste unos puntos extras._
+
+export default ({ children }) => <WrapperPost meta={meta}>{children}</WrapperPost
+
+>

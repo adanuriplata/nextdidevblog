@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   @apply text-white-ddev;
@@ -17,3 +21,141 @@ a {
 svg:not(:root) {
   overflow: visible;
 }
+
+.markdown {
+  @apply leading-relaxed md:text-xl text-lg font-serif;
+}
+
+/* Headers */
+.markdown h2 {
+  @apply text-2xl my-10 font-semibold text-white-l-ddev font-sans;
+}
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  @apply text-xl my-10 font-semibold text-white-l-ddev font-sans;
+}
+
+@screen sm {
+  .markdown h1,
+  .markdown h2 {
+    @apply text-2xl;
+  }
+  .markdown h3,
+  .markdown h4,
+  .markdown h5,
+  .markdown h6 {
+    @apply text-xl;
+  }
+}
+
+/* Links */
+.markdown a {
+  @apply text-orange-ddev;
+  @apply underline;
+}
+.markdown a:hover {
+  text-decoration: none;
+}
+/* Paragraph */
+.markdown p {
+  @apply mb-8;
+}
+/* Lists */
+.markdown ul,
+.markdown ol {
+  @apply mb-8 ml-8;
+}
+.markdown li > p,
+.markdown li > ul,
+.markdown li > ol {
+  @apply mb-0;
+}
+.markdown ol {
+  @apply list-decimal;
+}
+.markdown ul {
+  @apply list-disc;
+}
+/* Blockquotes */
+.markdown blockquote {
+  @apply px-2 md:py-6 py-4 ml-4 md:mr-4 mr-0 bg-gray-900 mb-8 border-l-4 border-green-ddev italic md:text-lg text-base;
+}
+.markdown blockquote > p {
+  @apply my-0 pl-4;
+}
+/* Tables */
+.markdown td,
+.markdown th {
+  @apply px-2 py-1 border border-gray-400;
+}
+.markdown tr:nth-child(odd) {
+  @apply bg-gray-900;
+}
+.markdown table {
+  @apply mb-6;
+}
+
+.markdown h2:before,
+.markdown h3:before,
+.markdown h4:before,
+.markdown h5:before,
+.markdown h6:before {
+  content: '#';
+  opacity: 0.9;
+  margin-right: 12px;
+}
+
+.markdown strong {
+  @apply text-white-l-ddev;
+}
+
+.markdown em {
+  @apply text-green-ddev;
+}
+
+.markdown code {
+  background: #272822;
+  @apply text-white-l-ddev;
+  padding: 0 6px;
+  border-radius: 4px;
+  margin: 0 4px;
+  overflow-x: scroll;
+}
+
+.markdown pre {
+  @apply bg-[#1C1427];
+  @apply border-2;
+  @apply border-[#E11D48];
+  @apply border-opacity-20;
+  @apply text-sm;
+  @apply leading-relaxed;
+  //  @apply first-of-type:prose-p:mt-0 ;
+  //  @apply last-of-type:prose-p:mb-0 ;
+  @apply sm:rounded-md;
+  margin: 10px 0;
+  @apply px-1;
+  margin-bottom: 2rem;
+}
+
+.table-wrapper {
+  overflow-x: scroll;
+}
+
+//  .markdown img {
+//    @apply mx-auto rounded-md;
+//  }
+
+.markdown .hljs {
+  background-color: transparent;
+}
+
+/* Wrap any inline highlights `that are really long`, but don't modify
+   the setting for codeblocks (inside ```), which are rendered in as:
+   <pre><code>...
+*/
+// .markdown :not(pre) > code.language-text {
+//   white-space: pre-line;
+// }
+/* purgecss end ignore */

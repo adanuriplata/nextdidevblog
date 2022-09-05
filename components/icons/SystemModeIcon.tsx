@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from 'react';
 
 export const SystemModeIcon = () => (
   <svg
@@ -71,6 +71,6 @@ export const SystemModeIcon = () => (
     <path stroke="#0EF9FC" strokeWidth={3} d="M6.5 13.5h57v37.39h-57z" />
     <ellipse cx={60.636} cy={50.146} rx={1.091} ry={1.122} fill="#D9D9D9" />
   </svg>
-)
+);
 
-export default SystemModeIcon
+export default SystemModeIcon;

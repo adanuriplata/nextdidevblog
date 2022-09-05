@@ -1,28 +1,27 @@
-import { useState, useEffect } from "react";
-import { CourseData } from "../types";
-
+import { useState, useEffect } from 'react';
+import { CourseData } from '../types';
 
 export const useFetchCourses = () => {
-
-  const [courses, setCourses] = useState<CourseData[]>([])
-  const [isLoading, setIsLoading] = useState(false)
+  const [courses, setCourses] = useState<CourseData[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    const getCourses = ( async() => {
-      setIsLoading(true)
+    const getCourses = async () => {
+      setIsLoading(true);
       try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_HOST}course`);
-        const data = await response.json()
-        setCourses(data)
-        setIsLoading(false)
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_HOST}course`
+        );
+        const data = await response.json();
+        setCourses(data);
+        setIsLoading(false);
       } catch (error) {
-        console.error("Error fetching data:", error)
-        setIsLoading(false)
+        console.error('Error fetching data:', error);
+        setIsLoading(false);
       }
-      
-    })
+    };
     getCourses();
-  }, [setCourses])
-  
-  return { isLoading, courses}
-}
+  }, [setCourses]);
+
+  return { isLoading, courses };
+};
