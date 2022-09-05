@@ -56,7 +56,7 @@ export const Experience = () => {
                   <ul>
                     <li>Estrategia SEM y SEO</li>
                     <li>
-                      Tracking de seguimiento CRM, Google Analytics, Sitio Web
+                      Google Analytics.
                     </li>
                     <li>Creación de nombre con Design Sprint</li>
                     <li>Gestión y creación campañas Google Ads</li>

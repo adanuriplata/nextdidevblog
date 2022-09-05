@@ -49,9 +49,9 @@ export const HeroHome = () => {
           </div>
         </div>
         <p>
-          Soy un <span className="text-green-ddev">Desarrollador Web</span> y{' '}
+          Soy un <span className="text-green-ddev">FrontEnd Developer</span> y{' '}
           <span className="text-green-ddev">Growth Marketer</span> con amplia
-          experiencia en React, Wordpress y Google Ads
+          experiencia en React, Wordpress, Google Ads. Y activamente aprendiendo Web3 con Solidity, HardHat, BlockChain, Eth.
         </p>
         <br />
         <Button link="/contacto" copy="Contactame ahora" />

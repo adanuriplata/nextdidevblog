@@ -39,15 +39,16 @@ export const AboutMe = () => {
                 <div className="w-1/2 pl-5 pr-5">
                   <ul className="list-disc">
                     <li>Javascript</li>
+                    <li>Next.js</li>
                     <li>React.js</li>
-                    <li>Google Analytics</li>
                   </ul>
                 </div>
                 <div className="w-1/2 pl-5">
                   <ul className="list-disc">
+                    <li>Typescript</li>
                     <li>Google Ads</li>
-                    <li>Next.js</li>
                     <li>WordPress</li>
+                    <li>Google Analytics</li>
                   </ul>
                 </div>
               </div>
