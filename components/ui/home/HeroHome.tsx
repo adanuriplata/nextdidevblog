@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { Button } from "../ui";
-import GithubIcon from "../icons/social/GithubIcon";
-import InstagramIcon from "../icons/social/InstagramIcon";
-import LinkedinIcon from "../icons/social/LinkedinIcon";
-import TwitterIcon from "../icons/social/TwitterIcon";
+import GithubIcon from "../../icons/social/GithubIcon";
+import InstagramIcon from "../../icons/social/InstagramIcon";
+import LinkedinIcon from "../../icons/social/LinkedinIcon";
+import TwitterIcon from "../../icons/social/TwitterIcon";
+import Button from "../Button";
 
-const Hero = () => {
+export const HeroHome = () => {
   const social = [
     {
       url: "https://github.com/adanuriplata",
@@ -60,4 +60,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroHome;

@@ -1,6 +1,5 @@
 import { ReactElement } from "react";
-import MainLayout from "../components/MainLayout";
-import AppMeta from "../components/MainLayout/AppMeta";
+import { AppMeta, MainLayout } from "../components/layout";
 import { CoursesCategory } from "../components/ui";
 import { useFetchCourses } from "../hooks/useFetchCourses";
 

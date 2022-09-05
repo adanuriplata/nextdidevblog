@@ -1,7 +1,7 @@
 import React from "react";
-import {Button} from "../ui";
+import Button from "../Button";
 
-const Experience = () => {
+export const Experience = () => {
   return (
     <section
       className="md:mb-52 mb-36 md:py-16 py-8"

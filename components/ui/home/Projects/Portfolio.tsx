@@ -1,7 +1,7 @@
-import useFetchProjects from "../../../hooks/useFetchProjects";
+import useFetchProjects from "../../../../hooks/useFetchProjects";
 import ItemPortfolio from "./ItemPortfolio";
 
-const Portfolio = () => {
+export const Portfolio = () => {
 
   const {isLoading, projects} = useFetchProjects();
 

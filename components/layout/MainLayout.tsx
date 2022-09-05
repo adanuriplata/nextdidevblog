@@ -1,7 +1,7 @@
-import React, { FC, ReactNode, useEffect } from "react";
-import AppHeader from "./AppHeader";
+import React, { FC, ReactNode } from "react";
+// import AppHeader from "./header/AppHeader";
 import AppFooter from "./AppFooter";
-import AppMeta from "./AppMeta";
+import { AppMeta, AppHeader } from "./header/";
 import { Hero } from "../ui";
 
 interface MainLayoutProps {
@@ -9,7 +9,7 @@ interface MainLayoutProps {
   heroTitle?: string;
 }
 
-const MainLayout: FC<MainLayoutProps> = ({ children, heroTitle }) => {
+export const MainLayout: FC<MainLayoutProps> = ({ children, heroTitle }) => {
   return (
     <div className="md:flex md:flex-col min-h-screen overflow-hidden bg-white-l-ddev dark:bg-bg-ddev ">
       <AppMeta></AppMeta>

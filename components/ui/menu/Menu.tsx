@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from 'next/router'
-import { DarkModeSwitch } from "../ui";
+import { DarkModeSwitch } from "..";
 
 interface MenuProps {
   menuMobile?: Boolean;
@@ -34,7 +34,7 @@ const menuItems = [
   },
 ];
 
-const Menu = ({menuMobile= false}: MenuProps) => {
+export const Menu = ({menuMobile= false}: MenuProps) => {
   const { asPath } = useRouter();
 
   if(menuMobile) {

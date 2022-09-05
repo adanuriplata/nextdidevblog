@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import Menu from "./Menu";
-import ButtonMenu from "./ButtonMenu";
 import { Transition } from "@headlessui/react";
-import MainLogoIcon from '../icons/MainLogoIcon';
+import { MainLogoIcon } from '../../icons';
+import { ButtonMenu, Menu } from "../../ui";
 
-const AppHeader = () => {
+export const AppHeader = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const handleOpen = (valueopen: boolean) => {
     setIsOpen(valueopen);

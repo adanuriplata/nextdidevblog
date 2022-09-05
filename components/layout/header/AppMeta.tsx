@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { NextSeo } from 'next-seo'
-import { AppConfig } from '../../utils/AppConfig';
+import { AppConfig } from '../../../utils/AppConfig';
 import { useRouter } from "next/router";
 
 interface AppMetaProps {
@@ -11,7 +11,7 @@ interface AppMetaProps {
   cover?: string
 }
 
-const AppMeta = ({ title, description, canonical, cover }: AppMetaProps) => {
+export const AppMeta = ({ title, description, canonical, cover }: AppMetaProps) => {
 
   const site = process.env.NEXT_PUBLIC_HOST
   const slug = useRouter().pathname

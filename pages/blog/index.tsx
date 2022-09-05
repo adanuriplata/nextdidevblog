@@ -1,7 +1,6 @@
 import { GetStaticProps } from "next";
 import { ReactElement } from "react";
-import MainLayout from "../../components/MainLayout";
-import AppMeta from "../../components/MainLayout/AppMeta";
+import { AppMeta, MainLayout } from "../../components/layout";
 import { PostCard } from "../../components/ui";
 import { PostData } from "../../types";
 import { getPosts } from "../../utils/postFunctions";

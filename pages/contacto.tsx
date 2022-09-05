@@ -1,7 +1,6 @@
 import { ReactElement } from "react";
-import ContactPage from "../components/ContactPage";
-import MainLayout from "../components/MainLayout";
-import AppMeta from "../components/MainLayout/AppMeta";
+import { ContactPage } from "../components/ui"
+import { AppMeta, MainLayout } from "../components/layout";
 
 
 const Contacto = () => {

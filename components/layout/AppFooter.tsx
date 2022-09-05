@@ -1,10 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { MainLogoIcon, LinkedinIcon, GithubIcon, InstagramIcon, TwitterIcon } from "/components/icons";
-// import { LinkedinIcon } from "/components/icons";
-// import GithubIcon from "/components/globals/icons/social/GithubIcon";
-// import InstagramIcon from "/components/globals/icons/social/InstagramIcon";
-// import TwitterIcon from "/components/globals/icons/social/TwitterIcon";
+import { GithubIcon, InstagramIcon, LinkedinIcon, MainLogoIcon, TwitterIcon } from "../icons";
+// import { MainLogoIcon, LinkedinIcon, GithubIcon, InstagramIcon, TwitterIcon } from "/components/icons";
 
 const AppFooter = () => {
   const social = [
@@ -32,7 +29,9 @@ const AppFooter = () => {
         <div className="">
           <Link href="/">
             <a>
-              <MainLogoIcon className="mx-auto" />
+              <div className="mx-auto">
+                <MainLogoIcon />
+              </div>
             </a>
           </Link>
           <div className="text-center m-0 md:text-sm text-xs leading-6 text-white-l-ddev">

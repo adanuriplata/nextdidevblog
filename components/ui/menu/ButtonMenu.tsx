@@ -1,6 +1,11 @@
 import React from "react";
 
-const ButtonMenu = ({ handleOpen, isOpen }) => {
+interface ButtonMenuProps {
+  handleOpen: (arg0: boolean) => void,
+  isOpen: boolean
+}
+
+export const ButtonMenu = ({ handleOpen, isOpen }:ButtonMenuProps) => {
   return (
     <button
       className="text-gray-500 w-10 h-10 relative focus:outline-none"

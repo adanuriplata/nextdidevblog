@@ -1,7 +1,6 @@
-import MainLayout from "../../MainLayout";
 import { FC, PropsWithChildren } from "react";
 import Image from "next/image";
-import AppMeta from "../../MainLayout/AppMeta";
+import { AppMeta, MainLayout } from "../../layout";
 
 interface WrapperPostProps {
     meta: {
