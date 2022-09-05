@@ -21,7 +21,7 @@ export const meta = {
 };
 
 Hubspot es sin duda uno de los mejores CRM que existen en el mercado actualmente y una herramienta muy utilizada en el marketing digital pero...
-Incrustar uno de sus forms también ayudan a que nuestra pagina se ponga lenta.
+Incrustar uno de sus forms también ayudan a que nuestra página se ponga lenta.
 
 Y si decides hacer un test en Google Speed te saldrá que ese código de hubspot que incrustaste es la causa de tener muchos puntos menos.
 
@@ -45,7 +45,7 @@ Si estas aquí es porque seguro ya notaste que el incrustar un form de hubspot e
 
 Para arreglar esto haremos uso de Javascript y su API [Intersection Observer](https://developer.mozilla.org/es/docs/Web/API/Intersection_Observer_API)
 
-#### Acerca del código de hubspost
+### Acerca del código de hubspost
 
 Ok, en nuestro primer paso analizaremos el código que nos da Hubspot para incrustar.
 
@@ -99,21 +99,21 @@ Despúes tenemos el llamado a la función `hbspt.forms.create()` a la cual le pa
 </script>
 ```
 
-El uso común es que nosotros incrustamos este código en el lugar exacto donde queramos que aparezca el sitio web, pero si por ejemplo nuestro form aparece hasta el final de la pagina (un uso general en landing pages) **no vale la pena cargar este script desde el inicio de nuestra página.**
+El uso común es que nosotros incrustamos este código en el lugar exacto donde queramos que aparezca el sitio web, pero si por ejemplo nuestro form aparece hasta el final de la página (un uso general en landing pages) **no vale la pena cargar este script desde el inicio de nuestra página.**
 
 Por lo cual vamos a hacer que **los 2 scripts se generen dinámicamente** hasta que el usuario llegue a la sección donde se visualizara el form, de esta forma la petición será exclusivamente **cuando se necesite.**
 
 ## Como usar Intersection Observer
 
-_Intersection Observer_ en resumen nos permite disparar una acción cuando un elemento de nuestra pagina aparece en el viewport.
+_Intersection Observer_ en resumen nos permite disparar una acción cuando un elemento de nuestra página aparece en el viewport.
 
-Si quieres conocer mas la documentación de [MDN](https://developer.mozilla.org/es/docs/Web/API/Intersection_Observer_API) es la mejor.
+Para mayor inforamción la documentación de [MDN](https://developer.mozilla.org/es/docs/Web/API/Intersection_Observer_API) es la mejor.
 
 > El objeto Intersection Observer recibe como parámetro una función callback y un objeto de opciones llamada options donde se decidirá por que acción será invocada la función callback.
 
 A continuación, crearemos la estructura de nuestro Intersection Observer.
 
-#### Estructura de Intersection Observer
+### Estructura de Intersection Observer
 
 Instanciamos el objeto y lo guardamos en la constante `hubspotObserver` pasamos como primer parámetro una arrow function y como segundo la opción threshold con el valor 0 (lo que significa que tan pronto como un píxel sea visible, la función callback será ejecutada).).
 
@@ -173,7 +173,7 @@ const hubspotObserver = new IntersectionObserver(
 > IntersectionObserverEntry
 > Describe la intersección entre el elemento de destino y su contenedor raíz en un momento específico de transición.
 
-#### Lllamando al script shell.js de hubspot
+### Llamando al script shell.js de hubspot
 
 Primero vamos a crear la etiqueta script que carga el archivo .js externo de hubspot
 
@@ -216,7 +216,7 @@ Hasta aquí **la carga de nuestro script se realiza justo hasta que el usuario l
 
 Pero ahora queda el pequeño detalle de que no se crea el form para eso debería bastar con agregar la segunda parte del script que nos dio hubspot.
 
-#### Llamando a la función create de hubspot
+### Llamando a la función create de hubspot
 
 Agregamos la propiedad `target` al objeto para indicar en que elemento haremos el render del form en este caso sera para el id `#divFormHolder`
 

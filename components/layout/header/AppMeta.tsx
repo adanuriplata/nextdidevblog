@@ -71,21 +71,21 @@ export const AppMeta = ({
           description: description ? description : AppConfig.description,
           images: [
             {
-              url: cover ? cover : '/img/og-image',
+              url: cover ? site + cover : site + '/img/og-image.jpg',
               width: 800,
               height: 600,
               alt: '/img/Og Image Alt',
               type: 'image/jpeg',
             },
             {
-              url: cover ? cover : '/img/og-image.jpg',
+              url: cover ? site + cover : site + '/img/og-image.jpg',
               width: 900,
               height: 800,
               alt: '/img/Og Image Alt Second',
               type: 'image/jpeg',
             },
-            { url: cover ? cover : '/img/og-image.jpg' },
-            { url: cover ? cover : '/img/og-image.jpg' },
+            { url: cover ? site + cover : site + '/img/og-image.jpg' },
+            { url: cover ? site + cover : site + '/img/og-image.jpg' },
           ],
           site_name: AppConfig.site_name,
         }}

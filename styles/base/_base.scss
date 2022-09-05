@@ -61,7 +61,7 @@ svg:not(:root) {
 /* Lists */
 .markdown ul,
 .markdown ol {
-  @apply mb-4 ml-8;
+  @apply mb-8 ml-8;
 }
 .markdown li > p,
 .markdown li > ul,
@@ -112,12 +112,12 @@ svg:not(:root) {
 }
 
 .markdown code {
-  //  background: #272822;
-  //  @apply text-white-l-ddev;
-  //  padding: 0 6px;
-  //  border-radius: 4px;
-  //  margin: 0 4px;
-  //  overflow-x: scroll;
+  background: #272822;
+  @apply text-white-l-ddev;
+  padding: 0 6px;
+  border-radius: 4px;
+  margin: 0 4px;
+  overflow-x: scroll;
 }
 
 .markdown pre {

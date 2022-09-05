@@ -1,7 +1,7 @@
 ---
-title: UTM - Mide todas tus acciones de mkt digital y organízalo en Analytics
+title: UTM - Mide todos tus acciones de mkt digital y organízalo en Analytics
 cover: 2021/04/utmgoogleanalytics.jpeg
-excerpt: Mide todas tus acciones de mkt digital y organízalo en Analytics | Muchos profesionales del marketing digital aun desconocen el poderoso uso de las utm. En este post te mostrarte los beneficios y como con 2 minutos ...
+excerpt: Mide todas tus objetivos de mkt digital y organízalo en Analytics | Muchos profesionales del marketing digital aun desconocen el poderoso uso de las utm. En este post te mostrarte los beneficios y como con 2 minutos ...
 date: 18 Abril, 2021
 category: Marketing
 ---
@@ -11,10 +11,10 @@ import Image from 'next/image';
 
 export const meta = {
   title:
-    'UTM - Mide todas tus acciones de mkt digital y organízalo en Analytics',
+    'UTM - Mide todos tus objetivos de mkt digital y organízalo en Analytics',
   cover: '2021/04/utmgoogleanalytics.jpeg',
   excerpt:
-    'Mide todas tus acciones de mkt digital y organízalo en Analytics | Muchos profesionales del marketing digital aun desconocen el poderoso uso de las utm. En este post te mostrarte los beneficios y como con 2 minutos ...',
+    'Mide todos tus objetivos de mkt digital y organízalo en Analytics | Muchos profesionales del marketing digital aun desconocen el poderoso uso de las utm. En este post te mostrarte los beneficios y como con 2 minutos ...',
   date: '18 Abril, 2021',
   author: 'Adan Uri Plata',
   authorUserName: '@adanuriplata',
@@ -23,18 +23,17 @@ export const meta = {
 
 Una de las preguntas que me hacen frecuentemente son:
 
-<br />
 - ¿Hay una manera de ver en Google Analytics de donde viene todo el trafico pero
-de mis campañas de marketing digital?
-<br />- ¿Como lleno la información de campañas en **Google Analytics**?
+  de mis campañas de marketing digital?
+- ¿Como lleno la información de campañas en **Google Analytics**?
 
-Muchos profesionales del marketing digital aun desconocen el poderoso uso de las utm. En este post tratare de mostrarte los beneficios y como con 2 minutos que le agregues cuando programas tus campañas puedes obtener información muy valiosa.
+Muchos profesionales del marketing digital aún desconocen el poderoso uso de las utm. En este post tratare de mostrarte los beneficios y como con 2 minutos que le agregues cuando programas tus campañas puedes obtener información muy valiosa.
 
 ## ¿Ques es UTM?
 
 > UTM en marketing digital es la forma de darle mas información acerca de tus campañas a Google Analytics.
 
-- Hey Google Analytics! tú lo sabes todo pero cuando den clic en este enlace: márcalo como enviado desde la campaña regreso a clases y ponle que fue un banner azul con la imagen de 2 niños felices publicado en instagram.
+- Hey Google Analytics! cuando den clic en este enlace: márcalo como enviado desde la campaña regreso a clases y ponle que fue un banner azul con la imagen de 2 niños felices publicado en instagram.
 
 ## Técnicamente que es UTM
 
@@ -44,7 +43,7 @@ Poniéndonos en _technical mode_ las utm son variables con información que viaj
 
 En el ejemplo anterior le decimos al navegador que queremos llegar a dicha dirección. El servidor donde se encuentra alojado el sitio web recibe la petición de mostrar lo que hay en la dirección "usuarios" y entonces muestra la página.
 
-Pero sí queremos ver solo un usuario podemos mandar el nombre de dicho usuario. Si el nombre del usuario fuera Pedro colocaríamos **usuario=pedro**Para agregar estos parámetros se tiene que anteponer un signo "?" después el nombre del campo y su valor.
+Pero sí queremos ver solo un usuario podemos mandar el nombre de dicho usuario. Si el nombre del usuario fuera Pedro colocaríamos `usuario=pedro` Para agregar estos parámetros se tiene que anteponer un signo "?" después el nombre del campo y su valor.
 
 ```php
 ? + [campo] + = + [valor]
@@ -58,11 +57,11 @@ Parametro:  ?usuario=pedro
 ```
 
 ```js
-//URL sin parametro: https://fuzzjs.com/usuarios
-//URL con el parametro: https://fuzzjs.com/usuarios?usuario=pedro
+URL sin parametro: https://adanplata.com/usuarios
+URL con el parametro: https://adanplata.com/usuarios?usuario=pedro
 ```
 
-Ahora cuando el servidor reciba la petición también recibirá un parámetro donde se le indica que el usuario a buscar es Pedro, internamente la pagina en su código tendrá funciones que interpretaran esa información y realizaran la búsqueda.
+Ahora cuando el servidor reciba la petición también recibirá un parámetro donde se le indica que el usuario a buscar es Pedro, internamente la página en su código tendrá funciones que interpretaran esa información y realizaran la búsqueda.
 
 `https://adanplata.com/oferta-regreso-a-clases?medio="google"`
 
@@ -70,9 +69,9 @@ Listo ahora ya sabes de forma general cómo funciona puede sonar un poco complej
 
 ## ¿Como agrego UTM a mis campañas?
 
-Con la información anterior seguramente estas pensando que agregando código cómo **?campaña=verano** o **?medio=facebook** seria el camino para agregar dichas utm a tus campañas y realmente no estas en un error pero eso es un poco engorroso y tedioso. Por eso existen herramientas que nos ayudan a generar dichas url´s sin complicarnos la vida.
+Con la información anterior seguramente estas pensando que agregando código cómo `?campaña=verano` o `?medio=facebook` seria el camino para agregar dichas utm a tus campañas y realmente no estas en un error pero eso es un poco engorroso y tedioso. Por eso existen herramientas que nos ayudan a generar dichas url´s sin complicarnos la vida.
 
-> Google tiene una serie de herramientas que nos ayudan a hacer más facíl estas y otras tareashttps://ga-dev-tools.appspot.com/campaign-url-builder/
+> Google tiene una serie de herramientas que nos ayudan a hacer más facíl estas y otras tareas [ga dev tools campaign url builder](https://ga-dev-tools.appspot.com/campaign-url-builder/)
 
 <div className=" max-w-sm m-auto ">
   <Image
@@ -113,16 +112,57 @@ A continuación veremos una tabla donde se informa que deberias llenar en cada c
 Tomemos como ejemplo un colegio que busca implementar una campaña de regreso a clases donde buscas promocionar un descuento con un banner que colocaras en el sitio web de un blog de noticias para padres llamado serpadre.com
 
 <div className="table-wrapper" markdown="block">
-
-| CAMPO                   | CONTENIDO                                                                                                                                                        | EJEMPLO                               |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
-| Website URL             | La url de destino como tu sitio web o landing page                                                                                                               | https://colegioX.com/regreso-a-clases |
-| Fuente de la campaña    | Lugar donde estara tu campaña                                                                                                                                    | blog serpadre.com                     |
-| Medio de la campaña     | Medio por el cual va a interactuar tu publico con tu campaña (video, banner, imagen, etc.)                                                                       | banner                                |
-| Nombre de la campaña    | Nombre para identificar en Analytics todas las interacciones que se tuvieron con esta campaña                                                                    | Regreso a clases                      |
-| Término de la campaña   | Opcional - alguna palabra clave en particular                                                                                                                    | lo dejaremos vacio                    |
-| Contenido de la campaña | Opcional - Si estas haciendo un test A/B aqui puedes colocar la variante para diferenciar, o si tienes dos banners puedes agregar la diferencia entre uno y otro | imagen con chicos sonriendo           |
-
+  <table>
+    <thead>
+      <tr>
+        <th>CAMPO</th>
+        <th>CONTENIDO</th>
+        <th>EJEMPLO</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Website URL</td>
+        <td>La url de destino como tu sitio web o landing page</td>
+        <td>https://colegioX.com/regreso-a-clases</td>
+      </tr>
+      <tr>
+        <td>Fuente de la campaña</td>
+        <td>Lugar donde estara tu campaña</td>
+        <td>blog serpadre.com </td>
+      </tr>
+      <tr>
+        <td>Medio de la campaña</td>
+        <td>
+          Medio por el cual va a interactuar tu publico con tu campaña (video,
+          banner, imagen, etc.
+        </td>
+        <td>banner</td>
+      </tr>
+      <tr>
+        <td>Nombre de la campaña</td>
+        <td>
+          Nombre para identificar en Analytics todas las interacciones que se
+          tuvieron con esta campaña
+        </td>
+        <td>Regreso a clases</td>
+      </tr>
+      <tr>
+        <td>Término de la campaña</td>
+        <td>Opcional - alguna palabra clave en particular</td>
+        <td>lo dejaremos vacio </td>
+      </tr>
+      <tr>
+        <td>Contenido de la campaña</td>
+        <td>
+          Opcional - Si estas haciendo un test A/B aqui puedes colocar la
+          variante para diferenciar, o si tienes dos banners puedes agregar la
+          diferencia entre uno y otro
+        </td>
+        <td>imagen con chicos sonriendo</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <div className=" max-w-sm m-auto ">
@@ -169,7 +209,7 @@ Podemos presionar en _Convert URL to Short Link y obtener una url corta_
   />
 </div>
 
-Listo ahora puedes colocar esa url en el enlace de tus campañas y cuando tus usuarios interactúen con tu campaña podrás saber exactamente de dónde provienen esos clics y por que medio o fuente tu campaña tiene mejor rendimiento.
+Listo ahora puedes colocar esa url en el enlace de tus campañas y cuando tus usuarios interactúen con tu campaña podrás saber exactamente de dónde provienen esos clics y porque medio o fuente tu campaña tiene mejor rendimiento.
 
 Coméntanos que otra herramienta conoces de medición y si te fue util comparte esta información.
 
