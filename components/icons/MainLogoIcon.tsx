@@ -2,6 +2,7 @@ import * as React from 'react';
 
 interface MainLogoIconProps {
   props?: any;
+  className?: string;
 }
 
 export function MainLogoIcon(props: MainLogoIconProps) {

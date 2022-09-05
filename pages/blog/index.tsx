@@ -34,7 +34,7 @@ Blog.getLayout = function getLayout(Blog: ReactElement) {
 };
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-  // const data = await fetch(`${process.env.NEXT_PUBLIC_API_HOST}posts`);
+  // const data = await fetch(`${process.env.NEXT_PUBLIC_API_HOST}/posts`);
   // const posts = await data.json();
   const posts = getPosts();
   return {

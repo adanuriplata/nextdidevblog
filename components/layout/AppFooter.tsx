@@ -32,14 +32,14 @@ const AppFooter = () => {
   return (
     <footer className="bg-gray-900 px-16 py-6 ">
       <div className=" md:flex max-w-6xl mx-auto md:justify-between items-center ">
-        <div className="">
-          <Link href="/">
-            <a>
-              <div className="mx-auto">
-                <MainLogoIcon />
-              </div>
-            </a>
-          </Link>
+        <div>
+          <div>
+            <Link href="/">
+              <a>
+                  <MainLogoIcon className="mx-auto" />
+              </a>
+            </Link>
+          </div>
           <div className="text-center m-0 md:text-sm text-xs leading-6 text-white-l-ddev">
             <p>© 2022 | Diseño 🚀 Desarrollo - Adan Uri Plata</p>
             <p>
