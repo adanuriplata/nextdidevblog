@@ -88,12 +88,14 @@ Project Link: [https://github.com/adanuriplata/nextdidevblog](https://github.com
 
 <!-- ACKNOWLEDGMENTS -->
 
-## Acknowledgments
+<!--## Acknowledgments
 
 - [Post for create nextjs blog]('https://www.freecodecamp.org/news/how-to-build-your-own-blog-with-next-js-and-mdx/')
 - [Post for create nextjs blog mdx]('https://blog.logrocket.com/create-next-js-mdx-blog/')
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+-->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
