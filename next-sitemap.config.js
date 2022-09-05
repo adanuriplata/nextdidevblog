@@ -1,6 +1,6 @@
 const siteUrl = process.env.NEXT_PUBLIC_HOST;
 
-if(siteUrl === "https://adanplata.com") {
+if(siteUrl === "https://www.adanplata.com") {
 
 module.exports = {
   siteUrl,

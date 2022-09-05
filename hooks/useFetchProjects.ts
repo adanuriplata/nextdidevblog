@@ -10,7 +10,7 @@ export const useFetchProjects = () => {
       try {
         setIsLoading(true);
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_HOST}projects`
+          `${process.env.NEXT_PUBLIC_API_HOST}/projects`
         );
         const data = await response.json();
         setProjects(data);
