@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
-import { AppConfig } from '../../../utils/AppConfig';
+import { AppConfig, AnalyticsCode } from '../../../utils';
 import { useRouter } from 'next/router';
 
 interface AppMetaProps {
@@ -30,6 +30,11 @@ export const AppMeta = ({
           content="width=device-width,initial-scale=-1"
           key="viewport"
         />
+
+        {
+          process.env.NODE_ENV === 'production' && AnalyticsCode
+        }
+      
         <link
           rel="apple-touch-icon"
           sizes="180x180"
