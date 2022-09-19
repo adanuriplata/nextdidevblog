@@ -52,7 +52,7 @@
     "uid": 8,
     "name": "Ecmascript 6",
     "linkOriginal": "https://platzi.com/p/adanuriplata/curso/1815-ecmascript-6/diploma/detalle/",
-    "img": "ecmascript6.jpg",
+    "img": "Ecmascript6.jpg",
     "category": "Ingenieria de Software y Desarrollo"
   },
   {
@@ -94,7 +94,7 @@
     "uid": 14,
     "name": "Introducción a Frameworks de PHP",
     "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2033-php-frameworks/diploma/detalle/",
-    "img": "introducciónaframeworksconphp.jpeg",
+    "img": "introduccionaframeworksconphp.jpeg",
     "category": "Ingenieria de Software y Desarrollo"
   },
   {
@@ -197,7 +197,7 @@
   },
   {
     "uid": 29,
-    "name": "Introducción al Desarrollo de Aplicaciones Desentralizadas",
+    "name": "Introducción al Desarrollo de Aplicaciones Descentralizadas",
     "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2562-intro-dapps/diploma/detalle/",
     "img": "IntroduccionalDesarrollodeAplicacionesDescentralizadas.jpg",
     "category": "Web 3"
@@ -257,5 +257,12 @@
     "linkOriginal": "https://platzi.com/p/adanuriplata/curso/2362-nextjs-jamstack/diploma/detalle/",
     "img": "Next.JSSitiosEstaticos.jpg",
     "category": "Ingenieria de Software y Desarrollo"
+  },
+  {
+    "uid": 38,
+    "name": "Ethereum Developer Program",
+    "linkOriginal": "https://app.poap.xyz/token/5628759",
+    "img": "EthereumDeveloperprogram.jpg",
+    "category": "Web 3"
   }
 ]
