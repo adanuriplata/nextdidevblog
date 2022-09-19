@@ -2,7 +2,7 @@
   {
     "uid": 1,
     "name": "Lexus Financial Services",
-    "description": "Sitio web para Toyota Lexus - Cotizador de Auto y verificación de buró de crédito",
+    "description": "Sitio web headless para Toyota Lexus - Cotizador de auto, verificación de buró de crédito, conexión con api CMS",
     "technologies": "NextJS, React, Javascript, Tailwind",
     "siteurl": "https://lexusfinancial.mx/",
     "image": "LexusFinancial.jpg"
