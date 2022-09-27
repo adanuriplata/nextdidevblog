@@ -13,7 +13,7 @@ export const AppHeader = () => {
   return (
     <nav
       className=" fixed w-full z-10 "
-      style={{ backdropFilter: 'blur(10px)' }}
+      style={{ backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}
     >
       <div className="relative flex items-center justify-between h-20 md:max-w-3xl lg:max-w-7xl 2xl:max-w-full mx-auto px-8 2xl:px-32">
         <div>
