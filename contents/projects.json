@@ -17,6 +17,14 @@
   },
   {
     "uid": 3,
+    "name": "Credit Card Form",
+    "description": "Formulario para visualizar datos de tarjeta de crédito mientras se va llenando",
+    "technologies": "NextJS, React, Tailwind, Typescript",
+    "siteurl": "https://card-form-adanuriplata.vercel.app/",
+    "image": "CreditForm.jpg"
+  },
+  {
+    "uid": 4,
     "name": "Crypto Tracker",
     "description": "WebApp para revisar precios de criptomonedas por API con filtro",
     "technologies": "NextJS, React, Tailwind, Typescript",
@@ -24,7 +32,7 @@
     "image": "CryptoTracker.jpg"
   },
   {
-    "uid": 4,
+    "uid": 5,
     "name": "Berlitz Online",
     "description": "E-commerce para venta de cursos online, integración Open Pay",
     "technologies": "WordPress, Woocommerce",
@@ -32,7 +40,15 @@
     "image": "berlitz-distordev.jpeg"
   },
   {
-    "uid": 5,
+    "uid": 6,
+    "name": "Laboratorios Clinigen",
+    "description": "Sitio web para laboratorio de pruebas clínicas y genéticas",
+    "technologies": "Wordpress, HTML, CSS",
+    "siteurl": "https://labclinigen.com/",
+    "image": "LabClinigen.jpg"
+  },
+  {
+    "uid": 7,
     "name": "Miroslava Stylist",
     "description": "Sitio web para asesora de imagen",
     "technologies": "Wordpress, HTML, CSS",
@@ -40,7 +56,7 @@
     "image": "Miroslava.jpg"
   },
   {
-    "uid": 6,
+    "uid": 8,
     "name": "Fairwind",
     "description": "Landing page, para campaña digital",
     "technologies": "Tailwind, HTML, CSS",
@@ -48,7 +64,7 @@
     "image": "fairwind-distordev.jpeg"
   },
   {
-    "uid": 7,
+    "uid": 9,
     "name": "Abarrote Diseño",
     "description": "E-commerce, integración con Open Pay y Pay pal",
     "technologies": "Wordpress, Woocommerce",
@@ -56,7 +72,7 @@
     "image": "abarrote-distordev.jpeg"
   },
   {
-    "uid": 8,
+    "uid": 10,
     "name": "imagen Acustica",
     "description": "Landing Page, Campaña Mkt digital. Casa productora de audio",
     "technologies": "HTML, CSS, Tailwind, Google Ads",
@@ -64,7 +80,7 @@
     "image": "imagenAcustica-distordev.jpeg"
   },
   {
-    "uid": 9,
+    "uid": 11,
     "name": "TrustHomes",
     "description": "Sitio Web, Directorio de propiedades para venta en Riviera Maya",
     "technologies": "WordPress",
@@ -72,7 +88,7 @@
     "image": "trusthomes-distordev.jpeg"
   },
   {
-    "uid": 10,
+    "uid": 12,
     "name": "Cotizador Poliza",
     "description": "Calculo de precio de poliza segun edad, genero y ciudad para aseguradora OneRisk",
     "technologies": "Javascript",
@@ -80,7 +96,7 @@
     "image": "onerisk-distordev.jpeg"
   },
   {
-    "uid": 11,
+    "uid": 13,
     "name": "Ayuda Conektica",
     "description": "Base de conocimiento con recursos de ayuda para clientes",
     "technologies": "JavaScript, React, Docusaurus",
@@ -88,7 +104,7 @@
     "image": "basedeconocimiento-distordev.jpeg"
   },
   {
-    "uid": 12,
+    "uid": 14,
     "name": "Shark Towers",
     "description": "Landing Page, campaña digital de departamentos en Cancun",
     "technologies": "HTML, CSS, Tailwind",
@@ -96,7 +112,7 @@
     "image": "sharktower-distordev.jpeg"
   },
   {
-    "uid": 13,
+    "uid": 15,
     "name": "Berlitz",
     "description": "Landing pages y campañas de Google Ads para sus sucursales en diferentes ciudades",
     "technologies": "HTML, CSS, Tailwind, Wordpress, Google Ads",
@@ -104,7 +120,7 @@
     "image": "berlitzads-distordev.jpeg"
   },
   {
-    "uid": 14,
+    "uid": 16,
     "name": "Area7",
     "description": "Sitio Web, listado de propiedades para su venta",
     "technologies": "Wordpress, Google Ads",
@@ -112,7 +128,7 @@
     "image": "area7-distordev.jpeg"
   },
   {
-    "uid": 15,
+    "uid": 17,
     "name": "IME Puebla",
     "description": "Sitio web, empresa de instalaciones mecanica electricas",
     "technologies": "Wordpress",
