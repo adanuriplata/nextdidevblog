@@ -11,14 +11,16 @@ const ItemPortfolio: React.FC<ProjectData> = ({
   return (
     <div className="transition duration-500 ease-in-out hover:bg-gray-800 bg-gray-900 border-gray-900 shadow-lg p-8 md:mx-0 mx-5 rounded-lg hover:shadow-solid border-2 hover:border-green-ddev hover:text-green-ddev ">
       <div className="mx-auto rounded-md">
-        <Image
-          className="mx-auto rounded-md"
-          src={`/img/projects/${image}`}
-          alt={`proyecto ${name}`}
-          loading="lazy"
-          width={247}
-          height={154}
-        />
+        <a href={siteurl} target="_BLANK" rel="noreferrer">
+          <Image
+            className="mx-auto rounded-md"
+            src={`/img/projects/${image}`}
+            alt={`proyecto ${name}`}
+            loading="lazy"
+            width={247}
+            height={154}
+          />
+        </a>
       </div>
       <div className="mt-6 block mx-auto">
         <h5 className="text-center md:text-2xl text-xl">{name}</h5>

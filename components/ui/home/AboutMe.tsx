@@ -70,10 +70,10 @@ export const AboutMe = () => {
             </p>
             <p className="mb-8">
               Con el surgimiento del marketing digital me interese por la unión
-              de la tecnología y le marketing. Cuento con más de 4 años de
+              de la tecnología y el marketing. Cuento con más de 4 años de
               experiencia realizando desarrollo web así como planeando y
-              ejecutando estrategias de marketing digital, las campañas de google
-              Ads son mi especialidad.
+              ejecutando estrategias de marketing digital, las campañas de
+              google Ads son mi especialidad.
             </p>
             <Button copy="Ver Últimos Cursos Aprobados" link="/formacion" />
           </div>
