@@ -1,11 +1,10 @@
-import Link from 'next/link';
 import GithubIcon from '../../icons/social/GithubIcon';
 import InstagramIcon from '../../icons/social/InstagramIcon';
 import LinkedinIcon from '../../icons/social/LinkedinIcon';
 import TwitterIcon from '../../icons/social/TwitterIcon';
 import Button from '../Button';
 
-export const HeroHome = () => {
+export const HeroHome = (): JSX.Element => {
   const social = [
     {
       url: 'https://github.com/adanuriplata',
@@ -39,11 +38,15 @@ export const HeroHome = () => {
         <div className="flex md:order-2 text-white-l-ddev align-middle pt-4 pb-5">
           <div className="flex max-w-sm space-x-4 pt-4 md:pt-0 ">
             {social.map((e, index) => (
-              <Link key={index} href={e.url}>
-                <a target="_blank" className=" w-5 ">
-                  {e.icon}
-                </a>
-              </Link>
+              <a
+                key={index}
+                href={e.url}
+                className=" w-5 "
+                target="_blank"
+                rel="noreferrer"
+              >
+                {e.icon}
+              </a>
             ))}
             <span>@AdanUriPlata</span>
           </div>
@@ -51,7 +54,8 @@ export const HeroHome = () => {
         <p>
           Soy un <span className="text-green-ddev">FrontEnd Developer</span> y{' '}
           <span className="text-green-ddev">Growth Marketer</span> con amplia
-          experiencia en React, Wordpress, Google Ads. <br /> Y activamente aprendiendo Web3 con Solidity, HardHat, BlockChain, Eth.
+          experiencia en React, Wordpress, Google Ads. <br /> Y activamente
+          aprendiendo Web3 con Solidity, HardHat, BlockChain, Eth.
         </p>
         <br />
         <Button link="/contacto" copy="Contactame ahora" />

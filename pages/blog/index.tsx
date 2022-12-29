@@ -9,7 +9,7 @@ interface BlogProps {
   posts: PostData[];
 }
 
-const Blog = ({ posts }: BlogProps) => {
+const Blog = ({ posts }: BlogProps): JSX.Element => {
   return (
     <div className="mt-5 mb-10 grid grid-cols-1 sm:grid-cols-2 gap-6 lg:grid-cols-3">
       {posts.map((item, index) => (

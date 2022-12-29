@@ -4,7 +4,7 @@ interface TwitterIconProps {
   props?: any;
 }
 
-export function TwitterIcon(props: TwitterIconProps) {
+export function TwitterIcon(props: TwitterIconProps): JSX.Element {
   return (
     <svg
       aria-hidden="true"

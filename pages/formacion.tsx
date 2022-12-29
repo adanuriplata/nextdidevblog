@@ -3,7 +3,7 @@ import { AppMeta, MainLayout } from '../components/layout';
 import { CoursesCategory } from '../components/ui';
 import { useFetchCourses } from '../hooks/useFetchCourses';
 
-const Formacion = () => {
+const Formacion = (): JSX.Element => {
   const { isLoading, courses } = useFetchCourses();
 
   return (

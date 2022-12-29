@@ -4,7 +4,7 @@ interface InstagramIconProps {
   props?: any;
 }
 
-export function InstagramIcon(props: InstagramIconProps) {
+export function InstagramIcon(props: InstagramIconProps): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" {...props}>
       <path

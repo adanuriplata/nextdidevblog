@@ -1,6 +1,4 @@
-import { useEffect } from 'react';
-
-export const Contact = () => {
+export const Contact = (): JSX.Element => {
   // useEffect(() => {
   //   const hubspotObserver = new IntersectionObserver(
   //     (entries) => {

@@ -5,7 +5,7 @@ interface MainLogoIconProps {
   className?: string;
 }
 
-export function MainLogoIcon(props: MainLogoIconProps) {
+export function MainLogoIcon(props: MainLogoIconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

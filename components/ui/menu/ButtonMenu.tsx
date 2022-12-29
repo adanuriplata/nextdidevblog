@@ -5,7 +5,10 @@ interface ButtonMenuProps {
   isOpen: boolean;
 }
 
-export const ButtonMenu = ({ handleOpen, isOpen }: ButtonMenuProps) => {
+export const ButtonMenu = ({
+  handleOpen,
+  isOpen,
+}: ButtonMenuProps): JSX.Element => {
   return (
     <button
       className="text-gray-500 w-10 h-10 relative focus:outline-none"

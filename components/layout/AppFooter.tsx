@@ -9,7 +9,7 @@ import {
 } from '../icons';
 // import { MainLogoIcon, LinkedinIcon, GithubIcon, InstagramIcon, TwitterIcon } from "/components/icons";
 
-const AppFooter = () => {
+const AppFooter = (): JSX.Element => {
   const social = [
     {
       url: 'https://github.com/adanuriplata',
@@ -35,9 +35,7 @@ const AppFooter = () => {
         <div>
           <div>
             <Link href="/">
-              <a>
-                  <MainLogoIcon className="mx-auto" />
-              </a>
+              <MainLogoIcon className="mx-auto" />
             </Link>
           </div>
           <div className="text-center m-0 md:text-sm text-xs leading-6 text-white-l-ddev">
@@ -74,11 +72,15 @@ const AppFooter = () => {
         <div className="">
           <div className="flex justify-center max-w-sm space-x-4 mx-auto pt-4 md:pt-0 ">
             {social.map((e, index) => (
-              <Link key={index} href={e.url}>
-                <a target="_blank" className=" w-5 ">
-                  {e.icon}
-                </a>
-              </Link>
+              <a
+                key={index}
+                href={e.url}
+                target="_blank"
+                rel="noreferrer"
+                className=" w-5 "
+              >
+                {e.icon}
+              </a>
             ))}
           </div>
           <div className="text-center text-white-l-ddev mt-2 text-sm">

@@ -8,7 +8,7 @@ import {
   Contact,
 } from '../components/ui';
 
-const Home = () => {
+const Home = (): JSX.Element => {
   return (
     <>
       <HeroHome />

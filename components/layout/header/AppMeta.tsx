@@ -16,10 +16,10 @@ export const AppMeta = ({
   description,
   canonical,
   cover,
-}: AppMetaProps) => {
+}: AppMetaProps): JSX.Element => {
   const site = process.env.NEXT_PUBLIC_HOST;
   const slug = useRouter().pathname;
-  const URL = slug ? site + slug : slug;
+  const URL = slug != null ? (site as string) + slug : slug;
 
   return (
     <>
@@ -31,10 +31,8 @@ export const AppMeta = ({
           key="viewport"
         />
 
-        {
-          process.env.NODE_ENV === 'production' && AnalyticsCode
-        }
-      
+        {process.env.NODE_ENV === 'production' && AnalyticsCode}
+
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -64,33 +62,53 @@ export const AppMeta = ({
 
       <NextSeo
         title={
-          title ? title + ' _ ' + AppConfig.site_name : AppConfig.site_name
+          title != null
+            ? title + ' _ ' + AppConfig.site_name
+            : AppConfig.site_name
         }
-        description={description ? description : AppConfig.description}
-        canonical={canonical ? canonical : URL}
+        description={description != null ? description : AppConfig.description}
+        canonical={canonical != null ? canonical : URL}
         openGraph={{
           url: URL,
-          title: title
-            ? title + ' _ ' + AppConfig.site_name
-            : AppConfig.site_name,
-          description: description ? description : AppConfig.description,
+          title:
+            title != null
+              ? title + ' _ ' + AppConfig.site_name
+              : AppConfig.site_name,
+          description:
+            description != null ? description : AppConfig.description,
           images: [
             {
-              url: cover ? site + cover : site + '/img/og-image.jpg',
+              url:
+                cover != null
+                  ? (site as string) + cover
+                  : (site as string) + '/img/og-image.jpg',
               width: 800,
               height: 600,
               alt: '/img/Og Image Alt',
               type: 'image/jpeg',
             },
             {
-              url: cover ? site + cover : site + '/img/og-image.jpg',
+              url:
+                cover != null
+                  ? (site as string) + cover
+                  : (site as string) + '/img/og-image.jpg',
               width: 900,
               height: 800,
               alt: '/img/Og Image Alt Second',
               type: 'image/jpeg',
             },
-            { url: cover ? site + cover : site + '/img/og-image.jpg' },
-            { url: cover ? site + cover : site + '/img/og-image.jpg' },
+            {
+              url:
+                cover != null
+                  ? (site as string) + cover
+                  : (site as string) + '/img/og-image.jpg',
+            },
+            {
+              url:
+                cover != null
+                  ? (site as string) + cover
+                  : (site as string) + '/img/og-image.jpg',
+            },
           ],
           site_name: AppConfig.site_name,
         }}

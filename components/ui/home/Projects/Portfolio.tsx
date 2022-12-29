@@ -1,7 +1,7 @@
 import useFetchProjects from '../../../../hooks/useFetchProjects';
-import ItemPortfolio from './ItemPortfolio';
+import { ItemPortfolio } from './ItemPortfolio';
 
-export const Portfolio = () => {
+export const Portfolio = (): JSX.Element => {
   const { isLoading, projects } = useFetchProjects();
 
   return (
@@ -21,7 +21,7 @@ export const Portfolio = () => {
         </header>
         <div className="grid md:grid-rows-2 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-6">
           {
-            //TODO: isLoading add placeholder
+            // TODO: isLoading add placeholder
             isLoading ? (
               <p>is Loading....</p>
             ) : (

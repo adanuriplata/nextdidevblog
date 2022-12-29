@@ -4,7 +4,7 @@ interface LinkedinIconProps {
   props?: any;
 }
 
-export function LinkedinIcon(props: LinkedinIconProps) {
+export function LinkedinIcon(props: LinkedinIconProps): JSX.Element {
   return (
     <svg
       aria-hidden="true"

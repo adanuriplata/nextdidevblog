@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export const DarkModeIcon = () => (
+export const DarkModeIcon = (): JSX.Element => (
   <svg
     width={15}
     height={15}

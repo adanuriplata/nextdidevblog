@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export const SystemModeIcon = () => (
+export const SystemModeIcon = (): JSX.Element => (
   <svg
     width={15}
     height={15}

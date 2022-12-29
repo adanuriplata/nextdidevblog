@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../Button';
 
-export const Experience = () => {
+export const Experience = (): JSX.Element => {
   return (
     <section className="md:mb-52 mb-36 md:py-16 py-8">
       <div>
@@ -55,9 +55,7 @@ export const Experience = () => {
                 <div className="md:w-8/12 w-full px-5">
                   <ul>
                     <li>Estrategia SEM y SEO</li>
-                    <li>
-                      Google Analytics.
-                    </li>
+                    <li>Google Analytics.</li>
                     <li>Creación de nombre con Design Sprint</li>
                     <li>Gestión y creación campañas Google Ads</li>
                   </ul>

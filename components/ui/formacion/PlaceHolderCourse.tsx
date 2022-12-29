@@ -2,7 +2,9 @@ interface PlaceHolderCourseProps {
   quantity: number;
 }
 
-export const PlaceHolderCourse = ({ quantity }: PlaceHolderCourseProps) => {
+export const PlaceHolderCourse = ({
+  quantity,
+}: PlaceHolderCourseProps): JSX.Element => {
   const placeHolderArray = Array.from(Array(quantity).keys());
 
   return (

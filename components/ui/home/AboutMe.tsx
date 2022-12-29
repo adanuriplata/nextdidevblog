@@ -3,7 +3,7 @@ import style from '../../../styles/components/ImageShadow.module.scss';
 import Image from 'next/image';
 import Button from '../Button';
 
-export const AboutMe = () => {
+export const AboutMe = (): JSX.Element => {
   return (
     // <section className=" mb-14 md:py-40 py-16 md:max-w-4xl lg:max-w-full 2xl:pl-72 2xl:pr-72 lg:pl-48 lg:pr-48 md:pl-32 px-8">
     <section className=" mb-14 md:py-40 py-16">

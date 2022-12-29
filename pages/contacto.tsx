@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import { ContactPage } from '../components/ui';
 import { AppMeta, MainLayout } from '../components/layout';
 
-const Contacto = () => {
+const Contacto = (): JSX.Element => {
   return <ContactPage />;
 };
 

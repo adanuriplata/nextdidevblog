@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { DarkModeSwitch } from '..';
+// import { DarkModeSwitch } from '..';
 
 interface MenuProps {
   menuMobile?: Boolean;
@@ -34,10 +34,10 @@ const menuItems = [
   },
 ];
 
-export const Menu = ({ menuMobile = false }: MenuProps) => {
+export const Menu = ({ menuMobile = false }: MenuProps): JSX.Element => {
   const { asPath } = useRouter();
 
-  if (menuMobile) {
+  if (menuMobile === true) {
     return (
       <div className=" md:hidden flex flex-wrap space-y-4 ">
         {menuItems
@@ -49,15 +49,14 @@ export const Menu = ({ menuMobile = false }: MenuProps) => {
                 asPath === e.url ? 'bg-gray-700' : 'hover:bg-gray-700'
               } w-full py-2`}
             >
-              <Link href={e.url}>
-                <a
-                  className={
-                    ' text-gray-300 w-full hover:bg font-sans items-center font-medium px-3 py-2 focus:outline-none rounded-md text-lg transition duration-500 ease-in-out'
-                  }
-                >
-                  <span className="text-green-ddev">&gt; </span>
-                  {e.name}
-                </a>
+              <Link
+                className={
+                  ' text-gray-300 w-full hover:bg font-sans items-center font-medium px-3 py-2 focus:outline-none rounded-md text-lg transition duration-500 ease-in-out'
+                }
+                href={e.url}
+              >
+                <span className="text-green-ddev">&gt; </span>
+                {e.name}
               </Link>
             </div>
           ))}
@@ -67,18 +66,18 @@ export const Menu = ({ menuMobile = false }: MenuProps) => {
   return (
     <div className=" flex space-x-4 flex-wrap items-center ">
       {menuItems.map((e) => (
-        <Link key={e.id} href={e.url}>
-          <a
-            className={` ${
-              asPath === e.url ? 'bg-gray-700' : 'hover:bg-gray-700'
-            } text-gray-300 font-sans items-center font-medium px-3 py-2 hover:bg focus:outline-none rounded-md transition duration-500 ease-in-out `}
-          >
-            <span className="text-green-ddev">&gt; </span>
-            {e.name}
-          </a>
+        <Link
+          className={` ${
+            asPath === e.url ? 'bg-gray-700' : 'hover:bg-gray-700'
+          } text-gray-300 font-sans items-center font-medium px-3 py-2 hover:bg focus:outline-none rounded-md transition duration-500 ease-in-out `}
+          key={e.id}
+          href={e.url}
+        >
+          <span className="text-green-ddev">&gt; </span>
+          {e.name}
         </Link>
       ))}
-      <DarkModeSwitch />
+      {/* <DarkModeSwitch /> */}
     </div>
   );
 };

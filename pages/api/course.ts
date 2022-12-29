@@ -4,7 +4,10 @@ import courses from '../../contents/courses.json';
 
 type Data = { message: string } | CourseData[];
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+export default function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+): void {
   switch (req.method) {
     case 'GET':
       return getCourses(req, res);
@@ -14,6 +17,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   }
 }
 
-const getCourses = (req: NextApiRequest, res: NextApiResponse<Data>) => {
+const getCourses = (req: NextApiRequest, res: NextApiResponse<Data>): void => {
   return res.status(200).json(courses);
 };

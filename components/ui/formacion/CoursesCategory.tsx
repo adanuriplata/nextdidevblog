@@ -18,12 +18,12 @@ export const CoursesCategory = ({
   courses,
   category,
   isLoading,
-}: CourseCategoryProps) => {
+}: CourseCategoryProps): JSX.Element => {
   return (
     <div className="my-16">
       <h4 className="md:text-left text-xl my-3">
-        {category == 'Marketing' ? '📉' : '👨‍🎓'}{' '}
-        {category == 'Ingenieria de Software y Desarrollo'
+        {category === 'Marketing' ? '📉' : '👨‍🎓'}{' '}
+        {category === 'Ingenieria de Software y Desarrollo'
           ? 'Ingeniería de Software y Desarrollo'
           : category}
       </h4>
@@ -32,7 +32,7 @@ export const CoursesCategory = ({
           <PlaceHolderCourse quantity={3} />
         ) : (
           courses
-            .filter((course) => course.category == category)
+            .filter((course) => course.category === category)
             .map((item) => <Course key={item.uid} {...item} />)
         )}
       </div>

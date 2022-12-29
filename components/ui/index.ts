@@ -6,8 +6,6 @@ export * from './formacion/PlaceHolderCourse';
 export * from './blog/PostCard';
 export * from './blog/WrapperPost';
 export * from './formacion/CoursesCategory';
-export * from './formacion/PlaceHolderCourse';
-export * from './formacion/Course';
 export * from './menu/Menu';
 export * from './menu/ButtonMenu';
 export * from './contact/ContactPage';

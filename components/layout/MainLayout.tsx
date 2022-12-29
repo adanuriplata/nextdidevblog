@@ -15,7 +15,7 @@ export const MainLayout: FC<MainLayoutProps> = ({ children, heroTitle }) => {
     <div className="md:flex md:flex-col min-h-screen overflow-hidden bg-bg-ddev ">
       <AppMeta></AppMeta>
       <AppHeader />
-      {heroTitle && <Hero title={heroTitle} />}
+      {heroTitle != null && <Hero title={heroTitle} />}
       <main className="max-w-screen-2xl mx-auto px-8 md:px-16 lg:px-32 grow shrink">
         <>{children}</>
       </main>

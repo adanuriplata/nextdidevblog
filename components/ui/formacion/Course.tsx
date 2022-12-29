@@ -1,7 +1,12 @@
 import Image from 'next/image';
 import { CourseData } from '../../../types/Courses';
 
-export const Course = ({ uid, img, linkOriginal, name }: CourseData) => {
+export const Course = ({
+  uid,
+  img,
+  linkOriginal,
+  name,
+}: CourseData): JSX.Element => {
   return (
     <div key={uid} className="text-center">
       <div>

@@ -4,7 +4,7 @@ interface FacebookIconProps {
   props?: any;
 }
 
-export function FacebookIcon(props: FacebookIconProps) {
+export function FacebookIcon(props: FacebookIconProps): JSX.Element {
   return (
     <svg
       aria-hidden="true"

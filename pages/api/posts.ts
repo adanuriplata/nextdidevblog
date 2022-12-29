@@ -4,7 +4,10 @@ import { getPosts } from '../../utils/postFunctions';
 
 type Data = { message: string } | PostData[];
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+export default function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+): void {
   switch (req.method) {
     case 'GET':
       return getPostsAPi(req, res);
@@ -14,7 +17,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   }
 }
 
-const getPostsAPi = (req: NextApiRequest, res: NextApiResponse<Data>) => {
+const getPostsAPi = (req: NextApiRequest, res: NextApiResponse<Data>): void => {
   const posts = getPosts();
   return res.status(200).json(posts);
 };

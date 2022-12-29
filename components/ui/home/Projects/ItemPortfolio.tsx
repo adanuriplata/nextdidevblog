@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { ProjectData } from '../../../../types';
 
-const ItemPortfolio: React.FC<ProjectData> = ({
+export const ItemPortfolio: React.FC<ProjectData> = ({
   name,
   description,
   technologies,
@@ -43,5 +43,3 @@ const ItemPortfolio: React.FC<ProjectData> = ({
     </div>
   );
 };
-
-export default ItemPortfolio;

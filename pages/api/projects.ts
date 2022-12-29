@@ -4,7 +4,10 @@ import projects from '../../contents/projects.json';
 
 type Data = { message: string } | ProjectData[];
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+export default function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+): void {
   switch (req.method) {
     case 'GET':
       return getProjects(req, res);
@@ -14,6 +17,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   }
 }
 
-const getProjects = (req: NextApiRequest, res: NextApiResponse<Data>) => {
+const getProjects = (req: NextApiRequest, res: NextApiResponse<Data>): void => {
   return res.status(200).json(projects);
 };
