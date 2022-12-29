@@ -1,3 +1,5 @@
+import { ContactForm } from '../../contactForm';
+
 export const Contact = (): JSX.Element => {
   // useEffect(() => {
   //   const hubspotObserver = new IntersectionObserver(
@@ -43,9 +45,11 @@ export const Contact = (): JSX.Element => {
         </header>
         <div className="mx-auto">
           <div
-            className="mx-auto max-w-screen-sm md:p-12 p-5 bg-gray-900 hover:shadow-2xl rounded-lg"
+            className="mx-auto max-w-screen-sm md:p-10 p-5 bg-gray-900 hover:shadow-2xl rounded-lg"
             id="divFormHolder"
-          ></div>
+          >
+            <ContactForm />
+          </div>
         </div>
       </div>
     </section>
